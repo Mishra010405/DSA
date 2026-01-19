@@ -14,7 +14,7 @@ public class JavaBasics {
 
         }
 
-        System.out.println(sum);
+        System.out.println("Sum is "+ sum);
 
         
     }    
