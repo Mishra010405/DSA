@@ -181,27 +181,111 @@
 
 // Average of the 3 numbers..
 
-import java.util.*;
+// import java.util.*;
 
-public class JavaBasics {
+// public class JavaBasics {
 
    
-    public static boolean isEven(int num) {
-        if (num % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+//     public static boolean isEven(int num) {
+//         if (num % 2 == 0) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
 
     
-    public static void main(String[] args) {
-        int number = 7;
+//     public static void main(String[] args) {
+//         int number = 7;
 
-        if (isEven(number)) {
-            System.out.println(number + " is Even");
-        } else {
-            System.out.println(number + " is Odd");
-        }
-    }
-}
+//         if (isEven(number)) {
+//             System.out.println(number + " is Even");
+//         } else {
+//             System.out.println(number + " is Odd");
+//         }
+//     }
+// }
+
+
+// Polindrom of the questions ...
+
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static boolean isPalindrome(int num) {
+//         int original = num;
+//         int rev = 0;
+
+//         while (num > 0) {
+//             int rem = num % 10;
+//             rev = rev * 10 + rem;
+//             num = num / 10;
+//         }
+
+//         if (original == rev) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+
+    
+//     public static void main(String[] args) {
+//         int number = 121;
+
+//         if (isPalindrome(number)) {
+//             System.out.println(" is a Palindrome");
+//         } else {
+//             System.out.println(" is NOT a Palindrome");
+//         }
+//     }
+// }
+
+
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void Patterns(int rows, int cols) {
+//         for (int i = 1; i <= rows; i++) {
+//             for (int j = 1; j <= cols; j++) {
+//                 if (i == 1 || i == rows || j == 1 || j == cols) {
+//                     System.out.print("*");
+//                 } else {
+//                     System.out.print(" ");
+//                 }
+//             }
+//             System.out.println(); 
+//         }
+//     }
+
+//     public static void main(String args[]) {
+//         Patterns(4, 5);
+//     }
+// }
+
+// O & 1 Triangle ...
+
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void Hallo_parammid(int n) {
+        
+//         for(int i = 1; i <= n; i++) {
+           
+//             for(int j = 1; j <= i; j++) {   
+//                 if((i + j) % 2 == 0) {   
+//                     System.out.print(1);  
+//                 }
+//                 else {
+//                     System.out.print(0);  
+//                 }
+//             }
+//             System.out.println(); 
+//         }             
+//     }
+
+//     public static void main(String args[]) {
+//         Hallo_parammid(5);  
+//     }
+// }
