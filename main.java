@@ -189,7 +189,7 @@
 
 // import java.util.*;
 
-// public class JavaBasica {
+// public class JavaBasics{
 //     public static void main(String args[]) {
 
 //         int n = 9;
