@@ -93,22 +93,236 @@
 
 
 // 
-import java.util.*;
+// import java.util.*;
 
-public class JavaBasics {
-    public static int oddeven(int num[]) {   // return type + array
-        for(int i = 0; i < num.length; i++) {
-            if((num[i]) % 2 == 0) {
-                System.out.println(num[i]);  
-            } 
-        }
-        return -1;
-    }
+// public class JavaBasics {
+//     public static int oddeven(int num[]) {   // return type + array
+//         for(int i = 0; i < num.length; i++) {
+//             if((num[i]) % 2 == 0) {
+//                 System.out.println(num[i]);  
+//             } 
+//         }
+//         return -1;
+//     }
 
-    public static void main(String args[]) {
-        int num[]  = {2,3,4,5,8,10,88,97,66,45,33,44};
-        oddeven(num);
+//     public static void main(String args[]) {
+//         int num[]  = {2,3,4,5,8,10,88,97,66,45,33,44};
+//         oddeven(num);
         
         
-    }
-}
+//     }
+// }
+
+
+// Binary Search
+
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static int BinarySearch(int number[], int key) {   
+//         int start = 0;
+//         int end = number.length - 1;
+
+//         while(start <= end) {  
+//             int mid = (start + end) / 2;
+
+//             if(number[mid] == key) {
+//                 return mid;
+//             }
+//             if(number[mid] > key) {
+//                 end = mid - 1;
+//             }
+//             else {  
+//                 start = mid + 1;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String args[]) {
+//         int number[] = {2,4,6,8,10,12,14};
+//         int key = 10;
+//         System.out.println("Index for key is " + BinarySearch(number, key));
+//     }
+// }
+
+// Reverse An array ...
+
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static int[] ReverseanArray(int num[]) {   // return array
+//         int first = 0; 
+//         int last = num.length - 1;
+
+//         while(first < last) {
+//             // swap
+//             int temp = num[last];
+//             num[last] = num[first];
+//             num[first] = temp;
+//             first++;
+//             last--;
+//         }
+//         return num;  
+//     }
+
+//     public static void main(String args[]) {
+//         int num[] = {2,4,6,8,10};
+//         System.out.println(Arrays.toString(ReverseanArray(num)));
+//     }
+// }
+
+
+// Give me the code of Second Largest  in an array ; 
+
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static int SecondLargest(int num[]) {  
+//         int largest = Integer.MIN_VALUE;         
+//         int second_largest = Integer.MIN_VALUE;   
+        
+//         for(int i = 0; i < num.length; i++) {     
+//             if(largest < num[i]) {
+//                 second_largest = largest;
+//                 largest = num[i];
+//             }
+//             else if(num[i] > second_largest && num[i] != largest) {
+//                 second_largest = num[i];
+//             }
+//         }
+        
+//         return second_largest;   
+//     }
+
+//     public static void main(String args[]) {
+//         int num[] = {2,4,6,8,10};
+//         System.out.println(SecondLargest(num));
+//     }
+// }
+
+
+// Subarray of the array....
+
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void PrintSubarray(int number []) {
+//        for(int i=0 ; i<number.length ; i++) {
+//         int start = i;
+//         for(int j= i ; j<number.length ; j++) {
+//             int end = j;
+//             for(int k = start ; k<=end ; k++) {
+//                 System.out.println(number[k]+" ");
+//             }
+//             System.out.println();
+//         }
+//        }
+       
+//     } 
+//     public static void main(String args []) {
+//         int number[] = {2,4,6,8,10};
+//         PrintSubarray(number);
+//     }      
+// }
+
+// Check two arrays are equal ..
+
+// import java.util.*; 
+
+// public class JavaBasics {
+
+//     public static boolean checkequalArray(int num1[], int num2[]) {   
+
+//         if(num1.length != num2.length) {  
+//             return false;
+//         }
+
+//         for(int i = 0; i < num1.length; i++) {
+//             if(num1[i] != num2[i]) {  
+//                 return false;
+//             }
+//         }
+
+//         return true;  
+//     }
+
+//     public static void main(String args[]) {
+//         int num1[] = {2,4,5,6,7,8};
+//         int num2[] = {2,4,5,6,7,7,9};
+
+//         System.out.println(checkequalArray(num1, num2));  
+//     }
+// }
+
+
+
+// Check if the array is sorted on not..
+
+// import java.util.*;
+
+// public class   JavaBasics{
+//     public static boolean SortanArray(int num[]) {
+//         for(int i=0 ; i<num.length ; i++) {
+//             if(num[i]< num[i+1]) {
+//                 return true;
+//             }
+            
+//         }
+//         return false;
+        
+//     }
+//     public static void main(String args[]) {
+//         int num[] = {2,3,4,5,6,7,8,9};
+//         System.out.println("The array is sorted "+SortanArray(num));
+//     }
+// }
+
+//  count the adjencent of the array...
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static int Countersma(int num[]) {  
+//         int count = 0;
+//         for(int i = 0; i < num.length - 1; i++) {
+//             if(num[i] == num[i + 1]) {
+//                 count++;
+//             }
+//         }
+//         return count;  
+//     }
+
+//     public static void main(String args[]) {
+//         int num[] = {2,3,2,2,2,4,5,6,7,8,9};
+        
+//         System.out.println(
+//             "The count of same adjacent numbers is " + Countersma(num)
+//         );
+//     }
+// }
+
+
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static void replacememnet(int num[]) {
+//         for(int i = 0; i < num.length; i++) {
+//             if(num[i] < 0) {
+//                 num[i] = 0;
+//             }
+//         }
+//     }
+
+//     public static void main(String args[]) {
+//         int num[] = {2,3,-2,4,-5,6,7,-8,9};
+
+//         replacememnet(num);
+
+        
+//         System.out.println(Arrays.toString(num));
+//     }
+// }
+
+
