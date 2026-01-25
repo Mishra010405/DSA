@@ -97,7 +97,7 @@
 
 // public class JavaBasics {
 //     public static int oddeven(int num[]) {   // return type + array
-//         for(int i = 0; i < num.length; i++) {
+//         for(int i = 0; i < n; i++) {
 //             if((num[i]) % 2 == 0) {
 //                 System.out.println(num[i]);  
 //             } 
@@ -153,7 +153,7 @@
 // public class JavaBasics {
 //     public static int[] ReverseanArray(int num[]) {   // return array
 //         int first = 0; 
-//         int last = num.length - 1;
+//         int last = n - 1;
 
 //         while(first < last) {
 //             // swap
@@ -182,7 +182,7 @@
 //         int largest = Integer.MIN_VALUE;         
 //         int second_largest = Integer.MIN_VALUE;   
         
-//         for(int i = 0; i < num.length; i++) {     
+//         for(int i = 0; i < n; i++) {     
 //             if(largest < num[i]) {
 //                 second_largest = largest;
 //                 largest = num[i];
@@ -263,7 +263,7 @@
 
 // public class   JavaBasics{
 //     public static boolean SortanArray(int num[]) {
-//         for(int i=0 ; i<num.length ; i++) {
+//         for(int i=0 ; i<n ; i++) {
 //             if(num[i]< num[i+1]) {
 //                 return true;
 //             }
@@ -285,7 +285,7 @@
 
 //     public static int Countersma(int num[]) {  
 //         int count = 0;
-//         for(int i = 0; i < num.length - 1; i++) {
+//         for(int i = 0; i < n - 1; i++) {
 //             if(num[i] == num[i + 1]) {
 //                 count++;
 //             }
@@ -308,7 +308,7 @@
 // public class JavaBasics {
 
 //     public static void replacememnet(int num[]) {
-//         for(int i = 0; i < num.length; i++) {
+//         for(int i = 0; i < n; i++) {
 //             if(num[i] < 0) {
 //                 num[i] = 0;
 //             }
@@ -324,5 +324,45 @@
 //         System.out.println(Arrays.toString(num));
 //     }
 // }
+
+
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static int removeDuplicates(int num[]) {
+//         int n = num.length;
+
+//         for(int i = 0; i < n; i++) {
+//             for(int j = i + 1; j < n; j++) {
+
+//                 if(num[i] == num[j]) {
+
+                    
+//                     for(int k = j; k < n - 1; k++) {
+//                         num[k] = num[k + 1];
+//                     }
+
+//                     n--;   
+//                     j--;  
+//                 }
+//             }
+//         }
+//         return n;
+//     }
+
+//     public static void main(String args[]) {
+//         int num[] = {2,3,2,4,-5,6,7,-8,9};
+
+//         int newSize = removeDuplicates(num);
+
+//         for(int s=0 ; s<=newSize; s++) {
+//             System.out.print(num[s] + " ");
+//         }
+//     }
+// }
+
+
+
 
 
