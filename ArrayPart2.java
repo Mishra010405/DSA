@@ -122,3 +122,28 @@
 //     }
 // }
 
+// Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct..
+
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static boolean  repeatelement(int num[]){
+//         for(int i=0 ; i<num.length ; i++ ) {
+//             if(num[i] == num[i+1]){
+//                 return true;
+//             }
+//             else {
+//                 return false;
+//             }
+//         }
+//         return false;
+//     }
+
+//     public static void main(String args[]) {
+//         int num[] = {1, 2, 3, 3, 4, 3, 2, 4, 2};
+//         System.out.println(repeatelement(num));
+
+//     }
+// }
+
+// 
