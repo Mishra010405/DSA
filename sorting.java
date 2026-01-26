@@ -32,24 +32,61 @@
 
 // Selection Sort 
 
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static void SelectionSort(int num[]) {
+//         for (int i = 0; i <=num.length - 1; i++) {
+//             int minpos = i;
+
+//             for (int j = i + 1; j < num.length; j++) {
+//                 if (num[j] < num[minpos]) {
+//                     minpos = j;
+//                 }
+//             }
+
+//             // swap
+//             int temp = num[minpos];
+//             num[minpos] = num[i];
+//             num[i] = temp;
+//         }
+//     }
+
+//     public static void Printarr(int num[]) {
+//         for (int i = 0; i < num.length; i++) {
+//             System.out.print(num[i] + " ");
+//         }
+//         System.out.println();
+//     }
+
+//     public static void main(String args[]) {
+//         int num[] = {5, 4, 1, 2, 3};
+//         SelectionSort(num);
+//         Printarr(num);
+//     }
+// }
+
+
+// InserTion Sort 
+
 import java.util.*;
 
 public class JavaBasics {
 
-    public static void SelectionSort(int num[]) {
-        for (int i = 0; i <=num.length - 1; i++) {
-            int minpos = i;
+    public static void InsertionSort(int num[]) {
+        for (int i = 1; i < num.length; i++) {
+            int curr = num[i];
+            int prev = i - 1;
 
-            for (int j = i + 1; j < num.length; j++) {
-                if (num[j] < num[minpos]) {
-                    minpos = j;
-                }
+            // find correct position for curr
+            while (prev >= 0 && num[prev] > curr) {
+                num[prev + 1] = num[prev];
+                prev--;
             }
 
-            // swap
-            int temp = num[minpos];
-            num[minpos] = num[i];
-            num[i] = temp;
+            // insert curr at correct position
+            num[prev + 1] = curr;
         }
     }
 
@@ -62,7 +99,7 @@ public class JavaBasics {
 
     public static void main(String args[]) {
         int num[] = {5, 4, 1, 2, 3};
-        SelectionSort(num);
+        InsertionSort(num);
         Printarr(num);
     }
 }
