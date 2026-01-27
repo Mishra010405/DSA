@@ -107,23 +107,41 @@
 
 // Inbuilt Sor intThe aray...
 
-import java.util.Arrays;
+// import java.util.Arrays;
+
+// public class JavaBasics {
+//     public static void main(String args[]) {
+//         int arr [] = {2,3,4,5,6,86,6};
+//         // Sort the array 
+//         // Arrays.sort(arr);
+//         // Sort with respect to the indexs..
+//         Arrays.sort(arr,0,4);
+
+
+//         // Now to print the arrays..
+//         for(int i=0 ; i<arr.length ; i++) {
+//             // System.out.println(arr[i]+" ");
+//             // System.out.println("Printexsssss ");
+
+//             System.out.println(arr[i]+" ");
+//         }
+//     }
+// }
+
+// Collections : For reversing the array in sort function ...
+import java.util.*;
 
 public class JavaBasics {
     public static void main(String args[]) {
-        int arr [] = {2,3,4,5,6,86,6};
-        // Sort the array 
-        // Arrays.sort(arr);
-        // Sort with respect to the indexs..
-        Arrays.sort(arr,0,4);
+        List<Integer> list = new ArrayList<>();
 
-
-        // Now to print the arrays..
-        for(int i=0 ; i<arr.length ; i++) {
-            // System.out.println(arr[i]+" ");
-            // System.out.println("Printexsssss ");
-
-            System.out.println(arr[i]+" ");
-        }
+        list.add(4);
+        list.add(3);
+        list.add(5);
+        list.add(7);
+        list.add(9);
+        list.add(1);
+        Collections.sort(list);
+        System.out.println(list);
     }
 }
