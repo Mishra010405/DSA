@@ -70,36 +70,60 @@
 
 // InserTion Sort 
 
-import java.util.*;
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static void InsertionSort(int num[]) {
+//         for (int i = 1; i < num.length; i++) {
+//             int curr = num[i];
+//             int prev = i - 1;
+
+//             // find correct position for curr
+//             while (prev >= 0 && num[prev] > curr) {
+//                 num[prev + 1] = num[prev];
+//                 prev--;
+//             }
+
+//             // insert curr at correct position
+//             num[prev + 1] = curr;
+//         }
+//     }
+
+//     public static void Printarr(int num[]) {
+//         for (int i = 0; i < num.length; i++) {
+//             System.out.print(num[i] + " ");
+//         }
+//         System.out.println();
+//     }
+
+//     public static void main(String args[]) {
+//         int num[] = {5, 4, 1, 2, 3};
+//         InsertionSort(num);
+//         Printarr(num);
+//     }
+// }
+
+
+// Inbuilt Sor intThe aray...
+
+import java.util.Arrays;
 
 public class JavaBasics {
-
-    public static void InsertionSort(int num[]) {
-        for (int i = 1; i < num.length; i++) {
-            int curr = num[i];
-            int prev = i - 1;
-
-            // find correct position for curr
-            while (prev >= 0 && num[prev] > curr) {
-                num[prev + 1] = num[prev];
-                prev--;
-            }
-
-            // insert curr at correct position
-            num[prev + 1] = curr;
-        }
-    }
-
-    public static void Printarr(int num[]) {
-        for (int i = 0; i < num.length; i++) {
-            System.out.print(num[i] + " ");
-        }
-        System.out.println();
-    }
-
     public static void main(String args[]) {
-        int num[] = {5, 4, 1, 2, 3};
-        InsertionSort(num);
-        Printarr(num);
+        int arr [] = {2,3,4,5,6,86,6};
+        // Sort the array 
+        // Arrays.sort(arr);
+        // Sort with respect to the indexs..
+        Arrays.sort(arr,0,4);
+
+
+        // Now to print the arrays..
+        for(int i=0 ; i<arr.length ; i++) {
+            // System.out.println(arr[i]+" ");
+            // System.out.println("Printexsssss ");
+
+            System.out.println(arr[i]+" ");
+        }
     }
 }
