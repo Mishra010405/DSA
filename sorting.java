@@ -129,18 +129,33 @@
 // }
 
 // Collections : For reversing the array in sort function ...
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void main(String args[]) {
+//         List<Integer> list = new ArrayList<>();
+
+//         list.add(4);
+//         list.add(3);
+//         list.add(5);
+//         list.add(7);
+//         list.add(9);
+//         list.add(1);
+//         Collections.sort(list);
+//         System.out.println(list);
+//     }
+// }
+
+
+// Convertion from Array to arraylist..
+
 import java.util.*;
 
 public class JavaBasics {
     public static void main(String args[]) {
-        List<Integer> list = new ArrayList<>();
+        Integer arr[] = {2,3,4,5,6,86,6};
 
-        list.add(4);
-        list.add(3);
-        list.add(5);
-        list.add(7);
-        list.add(9);
-        list.add(1);
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(arr));
         Collections.sort(list);
         System.out.println(list);
     }
