@@ -239,34 +239,72 @@
 
 
 // Selection Sort in Decending Order ....
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void SelectionSort(int num[]) {
+//         for(int i=0 ; i<num.length-1 ; i++) {
+//             int minpos = i;
+//             for(int j=i+1; j<num.length ; j++) {
+//                 if(num[minpos]<num[j]) {
+//                     minpos = j;
+//                 }
+//             }
+//             // Swap
+//             int temp = num[minpos];
+//             num[minpos] = num[i];
+//             num[i] = temp;
+//         }
+
+//     }
+
+//     public static void Printarr(int num[]) {
+//         for(int i=0 ; i<num.length ;i++){
+//             System.out.println(num[i]);
+//         }
+//     }
+//     public static void main(String args[]) {
+//         int num[] = {5,4,3,1,2};
+//         SelectionSort(num);
+//         Printarr(num);
+//     }
+// }
+
+
+// Decreasing the Arrays of the sorts in Insertions...
+
 import java.util.*;
 
 public class JavaBasics {
-    public static void SelectionSort(int num[]) {
-        for(int i=0 ; i<num.length-1 ; i++) {
-            int minpos = i;
-            for(int j=i+1; j<num.length ; j++) {
-                if(num[minpos]<num[j]) {
-                    minpos = j;
-                }
-            }
-            // Swap
-            int temp = num[minpos];
-            num[minpos] = num[i];
-            num[i] = temp;
-        }
 
+    public static void InsertionSort(int num[]) {
+
+        for (int i = 1; i < num.length; i++) {
+            int curr = num[i];
+            int prev = i - 1;
+
+            // Finding the correct position to insert
+            while (prev >= 0 && num[prev] < curr) {
+                num[prev + 1] = num[prev];
+                prev--;
+            }
+
+            // Insertion
+            num[prev + 1] = curr;
+        }
     }
 
     public static void Printarr(int num[]) {
-        for(int i=0 ; i<num.length ;i++){
-            System.out.println(num[i]);
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i] + " ");
         }
+        System.out.println();
     }
+
     public static void main(String args[]) {
-        int num[] = {5,4,3,1,2};
-        SelectionSort(num);
+        int num[] = {5, 4, 3, 1, 2};
+
+        InsertionSort(num);
         Printarr(num);
     }
 }
-
