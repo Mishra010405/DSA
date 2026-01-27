@@ -163,42 +163,80 @@
 
 // COunting Sort ....
 
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static void CountingSort(int arr[]) {
+//         int largest = Integer.MIN_VALUE;
+
+        
+//         for (int i = 0; i < arr.length; i++) {
+//             largest = Math.max(largest, arr[i]);
+//         }
+
+        
+//         int count[] = new int[largest + 1];
+//         for (int i = 0; i < arr.length; i++) {
+//             count[arr[i]]++;
+//         }
+
+       
+//         int j = 0;
+//         for (int i = 0; i < count.length; i++) {
+//             while (count[i] > 0) {
+//                 arr[j] = i;
+//                 j++;
+//                 count[i]--;
+//             }
+//         }
+//     }
+
+    
+//     public static void main(String args[]) {
+//         int arr[] = {5, 4, 1, 3, 2};
+
+//         CountingSort(arr);
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+
+
+// Bubble sort  in Deceiding otder...
 import java.util.*;
 
 public class JavaBasics {
 
-    public static void CountingSort(int arr[]) {
-        int largest = Integer.MIN_VALUE;
-
-        // Find largest element
-        for (int i = 0; i < arr.length; i++) {
-            largest = Math.max(largest, arr[i]);
-        }
-
-        // Count array
-        int count[] = new int[largest + 1];
-        for (int i = 0; i < arr.length; i++) {
-            count[arr[i]]++;
-        }
-
-        // Sorting
-        int j = 0;
-        for (int i = 0; i < count.length; i++) {
-            while (count[i] > 0) {
-                arr[j] = i;
-                j++;
-                count[i]--;
+    public static void BubbleSort(int num[]) {
+        
+        for (int i = 0; i < num.length - 1; i++) {
+            for (int j = 0; j < num.length - 1 - i; j++) {
+                if (num[j] < num[j + 1]) {
+                    int temp = num[j];
+                    num[j] = num[j + 1];
+                    num[j + 1] = temp;
+                }
             }
         }
+    }    
+    public static void PrintArray(int num[]) {
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i] + " ");
+        }
+        System.out.println();
     }
 
-    
     public static void main(String args[]) {
-        int arr[] = {5, 4, 1, 3, 2};
+        int num[] = {5, 4, 1, 2, 3};
 
-        CountingSort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        BubbleSort(num);
+        PrintArray(num);
     }
 }
+
+
+
+// Selection Sort in Decending Order ....
+
