@@ -302,7 +302,7 @@ public class JavaBasics {
     }
 
     public static void main(String args[]) {
-        int num[] = {5, 4, 3, 1, 2};
+        int num[] = {3, 6, 2, 1, 8, 7, 4, 5, 3, 1};
 
         InsertionSort(num);
         Printarr(num);
