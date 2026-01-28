@@ -248,20 +248,48 @@
 
 // count the number of 7 is in the matrix;
 
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void Counnumebr(int matrix[][]) {
+//         int count=0;
+//         for(int i=0 ; i<matrix.length ; i++ ) {
+//             for(int j=0; j<matrix.length ; j++ ){
+//                 if(matrix[i][j] == 7) {
+//                     count++;
+//                 }
+//             }
+//         }
+//         System.out.println("The count of the 7 in the matrix is "+count);
+        
+
+//     }
+//     public static void main(String args[]) {
+//         int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+//         Counnumebr(matrix);
+//     }
+// }
+
+
+// Print the sum of the numbers in the Second Rows...
+
 import java.util.*;
 
 public class JavaBasics {
-    public static void Counnumebr(int matrix[][]) {
-        int count=0;
-        for(int i=0 ; i<matrix.length ; i++ ) {
-            for(int j=0; j<matrix.length ; j++ ){
-                if(matrix[i][j] == 7) {
-                    count++;
-                }
+    public static void Secondrow(int matrix[][]) {
+        int row =1; ;
+        int sum=0;
+        // 2nd row..
+        for(int j=0  ; j<matrix.length ; j++) {
+            sum += matrix[row][j];
             }
-        }
-        System.out.println("The count of the 7 in the matrix is "+count);
         
+        System.out.println(sum);
 
     }
     public static void main(String args[]) {
@@ -271,6 +299,7 @@ public class JavaBasics {
             {9,  10, 11, 12},
             {13, 14, 15, 16}
         };
-        Counnumebr(matrix);
+        Secondrow(matrix);
     }
+
 }
