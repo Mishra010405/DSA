@@ -140,34 +140,77 @@
 
 // Sum of the Diagonals of the Matrix ...
 
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void sumofDiagonal(int matrix[][]) {
+//         int sum=0;
+//         for(int i=0 ; i<matrix.length; i++ ) {
+//             for(int j=0 ; j<matrix[0].length ; j++) {
+//                 if(i==j) {
+//                     sum +=matrix[i][j];
+//                 }
+//                 else if (i+j==matrix.length-1) {
+//                     sum += matrix[i][j];
+//                 }
+//             }
+//         }
+//         // Print the sum odf the Diagonals
+//         System.out.println("The sum of the Diagonals is - "+sum);
+
+//     }
+
+//     public static void main (String args []) {
+//         int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+//         sumofDiagonal(matrix);
+
+//     }
+// }
+
+// Search in Sorted Matrix...
+
 import java.util.*;
 
 public class JavaBasics {
-    public static void sumofDiagonal(int matrix[][]) {
-        int sum=0;
-        for(int i=0 ; i<matrix.length; i++ ) {
-            for(int j=0 ; j<matrix[0].length ; j++) {
-                if(i==j) {
-                    sum +=matrix[i][j];
-                }
-                else if (i+j==matrix.length-1) {
-                    sum += matrix[i][j];
-                }
+
+    public static boolean StaircaseSearch(int matrix[][], int key) {
+        int row = 0;
+        int col = matrix[0].length - 1;
+
+        while(row < matrix.length && col >= 0) {
+
+            if(matrix[row][col] == key) {
+                System.out.println("The key found at (" + row + ", " + col + ")");
+                return true;
+            }
+            else if(key < matrix[row][col]) {
+                col--;
+            }
+            else {
+                row++;
             }
         }
-        // Print the sum odf the Diagonals
-        System.out.println("The sum of the Diagonals is - "+sum);
 
+        System.out.println("Key Not Found");
+        return false;
     }
 
-    public static void main (String args []) {
+    public static void main(String args[]) {
+
         int matrix[][] = {
             {1,  2,  3,  4},
             {5,  6,  7,  8},
             {9,  10, 11, 12},
             {13, 14, 15, 16}
         };
-        sumofDiagonal(matrix);
 
+        int key = 11;
+
+        StaircaseSearch(matrix, key);
     }
 }
