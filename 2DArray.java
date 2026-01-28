@@ -81,58 +81,93 @@
 
 // Spitall Matrixx...
 
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static void SpiralMatrix(int matrix[][]) {
+//         int startRow = 0;
+//         int startCol = 0;
+//         int endRow = matrix.length - 1;
+//         int endCol = matrix[0].length - 1;
+
+//         while(startRow <= endRow && startCol <= endCol) {
+
+//             // Top
+//             for(int j = startCol; j <= endCol; j++) {
+//                 System.out.print(matrix[startRow][j] + " ");
+//             }
+
+//             // Right
+//             for(int i = startRow + 1; i <= endRow; i++) {
+//                 System.out.print(matrix[i][endCol] + " ");
+//             }
+
+//             // Bottom
+//             if(startRow <endRow) {
+//                 for(int j = endCol - 1; j >= startCol; j--) {
+//                     System.out.print(matrix[endRow][j] + " ");
+//                 }
+//             }
+
+//             // Left
+//             if(startCol < endCol) {
+//                 for(int i = endRow - 1; i > startRow; i--) {
+//                     System.out.print(matrix[i][startCol] + " ");
+//                 }
+//             }
+
+//             startRow++;
+//             startCol++;
+//             endRow--;
+//             endCol--;
+//         }
+//         System.out.println();
+//     }
+
+//     public static void main(String args[]) {
+//         int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+
+//         SpiralMatrix(matrix);   
+//     }
+// }
+
+
+// Sum of the Diagonals of the Matrix ...
+
 import java.util.*;
 
 public class JavaBasics {
-
-    public static void SpiralMatrix(int matrix[][]) {
-        int startRow = 0;
-        int startCol = 0;
-        int endRow = matrix.length - 1;
-        int endCol = matrix[0].length - 1;
-
-        while(startRow <= endRow && startCol <= endCol) {
-
-            // Top
-            for(int j = startCol; j <= endCol; j++) {
-                System.out.print(matrix[startRow][j] + " ");
-            }
-
-            // Right
-            for(int i = startRow + 1; i <= endRow; i++) {
-                System.out.print(matrix[i][endCol] + " ");
-            }
-
-            // Bottom
-            if(startRow <endRow) {
-                for(int j = endCol - 1; j >= startCol; j--) {
-                    System.out.print(matrix[endRow][j] + " ");
+    public static void sumofDiagonal(int matrix[][]) {
+        int sum=0;
+        for(int i=0 ; i<matrix.length; i++ ) {
+            for(int j=0 ; j<matrix[0].length ; j++) {
+                if(i==j) {
+                    sum +=matrix[i][j];
+                }
+                else if (i+j==matrix.length-1) {
+                    sum += matrix[i][j];
                 }
             }
-
-            // Left
-            if(startCol < endCol) {
-                for(int i = endRow - 1; i > startRow; i--) {
-                    System.out.print(matrix[i][startCol] + " ");
-                }
-            }
-
-            startRow++;
-            startCol++;
-            endRow--;
-            endCol--;
         }
-        System.out.println();
+        // Print the sum odf the Diagonals
+        System.out.println("The sum of the Diagonals is - "+sum);
+
     }
 
-    public static void main(String args[]) {
+    public static void main (String args []) {
         int matrix[][] = {
             {1,  2,  3,  4},
             {5,  6,  7,  8},
             {9,  10, 11, 12},
             {13, 14, 15, 16}
         };
+        sumofDiagonal(matrix);
 
-        SpiralMatrix(matrix);   
     }
 }
