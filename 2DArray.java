@@ -385,35 +385,70 @@
 // CHeck if the matrix is square or not..
 
 
-import java.util.*;
+// import java.util.*;
 
-public class JavaBasics {
-    public static boolean columnwise(int matrix1[][]) {
-        int row = matrix1.length;
-        int col = matrix1.length;
-        if(row==col) {
-            return true;
-        }
-        else {
-            return false;
-        }
-        }
+// public class JavaBasics {
+//     public static boolean columnwise(int matrix1[][]) {
+//         int row = matrix1.length;
+//         int col = matrix1.length;
+//         if(row==col) {
+//             return true;
+//         }
+//         else {
+//             return false;
+//         }
+//         }
 
     
+//     public static void main(String args[]) {
+//         int matrix1[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+        
+//         columnwise(matrix1);
+//         if(columnwise(matrix1)){
+//             System.out.println("The Matrix is a Square Matrix.");
+//         }
+//         else {
+//             System.out.println("The Matrix is not a Square Matrix.");
+//         }
+//     }
+// }
+
+
+// Reverse The Each row of the matrix..
+
+import java.util.*;
+public class JavaBasics{
+    public static void Reverseth(int matrix[][]){
+        for(int i=0; i<matrix.length; i++){
+        int left=0;
+        int Right= matrix.length-1;
+        while(left<Right){
+            int temp = matrix[i][left];
+            matrix[i][left] = matrix[i][Right];
+            matrix[i][Right] = temp;
+
+            left++;
+            Right--;
+        }
+        }
+        for(int i=0 ; i< matrix.length ; i++) {
+            for(int j=0 ; j<matrix.length; j++) {
+                System.out.println(matrix[i][j]);
+            }
+        }
+    }
     public static void main(String args[]) {
-        int matrix1[][] = {
+       int matrix[][] = {
             {1,  2,  3,  4},
             {5,  6,  7,  8},
             {9,  10, 11, 12},
             {13, 14, 15, 16}
-        };
-        
-        columnwise(matrix1);
-        if(columnwise(matrix1)){
-            System.out.println("The Matrix is a Square Matrix.");
-        }
-        else {
-            System.out.println("The Matrix is not a Square Matrix.");
-        }
+        }; 
+        Reverseth(matrix);
     }
 }
