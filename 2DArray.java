@@ -174,43 +174,73 @@
 
 // Search in Sorted Matrix...
 
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static boolean StaircaseSearch(int matrix[][], int key) {
+//         int row = 0;
+//         int col = matrix[0].length - 1;
+
+//         while(row < matrix.length && col >= 0) {
+
+//             if(matrix[row][col] == key) {
+//                 System.out.println("The key found at (" + row + ", " + col + ")");
+//                 return true;
+//             }
+//             else if(key < matrix[row][col]) {
+//                 col--;
+//             }
+//             else {
+//                 row++;
+//             }
+//         }
+
+//         System.out.println("Key Not Found");
+//         return false;
+//     }
+
+//     public static void main(String args[]) {
+
+//         int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+
+//         int key = 11;
+
+//         StaircaseSearch(matrix, key);
+//     }
+// }
+
+
+// Print the number of 7’s that are in the 2d array.
+
 import java.util.*;
-
 public class JavaBasics {
-
-    public static boolean StaircaseSearch(int matrix[][], int key) {
-        int row = 0;
-        int col = matrix[0].length - 1;
-
-        while(row < matrix.length && col >= 0) {
-
-            if(matrix[row][col] == key) {
-                System.out.println("The key found at (" + row + ", " + col + ")");
-                return true;
-            }
-            else if(key < matrix[row][col]) {
-                col--;
-            }
-            else {
-                row++;
+    public static boolean Printnum(int matrix[][] ) {
+        for(int i=0 ; i<matrix.length ; i++) {
+            for(int j=0 ; j<matrix[0].length ; j++) {
+                if(matrix[i][j] == 7){
+                    System.out.println("The number is Present " +matrix[i][j]);
+                    return true;
+                }
+                
             }
         }
-
-        System.out.println("Key Not Found");
+        System.out.println("Number is not present");
         return false;
     }
 
     public static void main(String args[]) {
-
         int matrix[][] = {
             {1,  2,  3,  4},
             {5,  6,  7,  8},
             {9,  10, 11, 12},
             {13, 14, 15, 16}
         };
-
-        int key = 11;
-
-        StaircaseSearch(matrix, key);
+        Printnum(matrix);
     }
 }
