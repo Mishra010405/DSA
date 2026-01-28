@@ -340,30 +340,66 @@
 // }
 
 
-// Print the sum of the numbers in the Second Rows...
+// Sum of the Two Matrices...
+
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void columnwise(int matrix1[][], int matrix2[][]) {
+//         int row = matrix1.length;
+//         int col = matrix1.length;
+//         int matrix3[][] = new int[row][col];
+//         for(int i=0 ; i< row ; i++) {
+//             for(int j=0 ; j<col ; j++) {
+//                 matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
+
+//             }
+//         }
+//         for(int i=0 ; i<row; i++) {
+//             for(int j=0 ; j<col; j++) {
+//                 System.out.println(matrix3[i][j]);
+               
+//             }
+//             System.out.println();
+//         }
+
+//     }
+//     public static void main(String args[]) {
+//         int matrix1[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+//         int matrix2[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+//         columnwise(matrix1,matrix2);
+//     }
+
+// }
+
+// CHeck if the matrix is square or not..
+
 
 import java.util.*;
 
 public class JavaBasics {
-    public static void columnwise(int matrix1[][], int matrix2[][]) {
+    public static boolean columnwise(int matrix1[][]) {
         int row = matrix1.length;
         int col = matrix1.length;
-        int matrix3[][] = new int[row][col];
-        for(int i=0 ; i< row ; i++) {
-            for(int j=0 ; j<col ; j++) {
-                matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
-
-            }
+        if(row==col) {
+            return true;
         }
-        for(int i=0 ; i<row; i++) {
-            for(int j=0 ; j<col; j++) {
-                System.out.println(matrix3[i][j]);
-               
-            }
-            System.out.println();
+        else {
+            return false;
+        }
         }
 
-    }
+    
     public static void main(String args[]) {
         int matrix1[][] = {
             {1,  2,  3,  4},
@@ -371,13 +407,13 @@ public class JavaBasics {
             {9,  10, 11, 12},
             {13, 14, 15, 16}
         };
-        int matrix2[][] = {
-            {1,  2,  3,  4},
-            {5,  6,  7,  8},
-            {9,  10, 11, 12},
-            {13, 14, 15, 16}
-        };
-        columnwise(matrix1,matrix2);
+        
+        columnwise(matrix1);
+        if(columnwise(matrix1)){
+            System.out.println("The Matrix is a Square Matrix.");
+        }
+        else {
+            System.out.println("The Matrix is not a Square Matrix.");
+        }
     }
-
 }
