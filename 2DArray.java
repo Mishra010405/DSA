@@ -306,35 +306,78 @@
 
 // Transpose the Matrix ...
 
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void TransposeMatrix(int matrix[][]) {
+//         int rows = matrix.length;
+//         int cols = matrix.length;
+//         int num[][] = new int[cols][rows];
+//         for(int i=0 ; i<rows ; i++) {
+//             for(int j= 0 ; j<cols ; j++) {
+//                 num[j][i] = matrix[i][j];
+//             }
+//         }
+//         for(int i=0 ; i<rows ; i++) {
+//             for(int j=0 ; j<cols ; j++) {
+//                 System.out.println(num[i][j]);
+//             }
+//             System.out.println();
+//         }
+
+//     }
+//     public static void main(String args []) {
+//         int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+
+//         TransposeMatrix(matrix);
+
+//     }
+// }
+
+
+// Print the sum of the numbers in the Second Rows...
+
 import java.util.*;
 
 public class JavaBasics {
-    public static void TransposeMatrix(int matrix[][]) {
-        int rows = matrix.length;
-        int cols = matrix.length;
-        int num[][] = new int[cols][rows];
-        for(int i=0 ; i<rows ; i++) {
-            for(int j= 0 ; j<cols ; j++) {
-                num[j][i] = matrix[i][j];
+    public static void columnwise(int matrix1[][], int matrix2[][]) {
+        int row = matrix1.length;
+        int col = matrix1.length;
+        int matrix3[][] = new int[row][col];
+        for(int i=0 ; i< row ; i++) {
+            for(int j=0 ; j<col ; j++) {
+                matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
+
             }
         }
-        for(int i=0 ; i<rows ; i++) {
-            for(int j=0 ; j<cols ; j++) {
-                System.out.println(num[i][j]);
+        for(int i=0 ; i<row; i++) {
+            for(int j=0 ; j<col; j++) {
+                System.out.println(matrix3[i][j]);
+               
             }
             System.out.println();
         }
 
     }
-    public static void main(String args []) {
-        int matrix[][] = {
+    public static void main(String args[]) {
+        int matrix1[][] = {
             {1,  2,  3,  4},
             {5,  6,  7,  8},
             {9,  10, 11, 12},
             {13, 14, 15, 16}
         };
-
-        TransposeMatrix(matrix);
-
+        int matrix2[][] = {
+            {1,  2,  3,  4},
+            {5,  6,  7,  8},
+            {9,  10, 11, 12},
+            {13, 14, 15, 16}
+        };
+        columnwise(matrix1,matrix2);
     }
+
 }
