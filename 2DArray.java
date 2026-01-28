@@ -278,28 +278,63 @@
 
 // Print the sum of the numbers in the Second Rows...
 
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void Secondrow(int matrix[][]) {
+//         int row =1; ;
+//         int sum=0;
+//         // 2nd row..
+//         for(int j=0  ; j<matrix.length ; j++) {
+//             sum += matrix[row][j];
+//             }
+        
+//         System.out.println(sum);
+
+//     }
+//     public static void main(String args[]) {
+//         int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+//         Secondrow(matrix);
+//     }
+
+// }
+
+// Transpose the Matrix ...
+
 import java.util.*;
 
 public class JavaBasics {
-    public static void Secondrow(int matrix[][]) {
-        int row =1; ;
-        int sum=0;
-        // 2nd row..
-        for(int j=0  ; j<matrix.length ; j++) {
-            sum += matrix[row][j];
+    public static void TransposeMatrix(int matrix[][]) {
+        int rows = matrix.length;
+        int cols = matrix.length;
+        int num[][] = new int[cols][rows];
+        for(int i=0 ; i<rows ; i++) {
+            for(int j= 0 ; j<cols ; j++) {
+                num[j][i] = matrix[i][j];
             }
-        
-        System.out.println(sum);
+        }
+        for(int i=0 ; i<rows ; i++) {
+            for(int j=0 ; j<cols ; j++) {
+                System.out.println(num[i][j]);
+            }
+            System.out.println();
+        }
 
     }
-    public static void main(String args[]) {
+    public static void main(String args []) {
         int matrix[][] = {
             {1,  2,  3,  4},
             {5,  6,  7,  8},
             {9,  10, 11, 12},
             {13, 14, 15, 16}
         };
-        Secondrow(matrix);
-    }
 
+        TransposeMatrix(matrix);
+
+    }
 }
