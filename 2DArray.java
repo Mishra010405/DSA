@@ -1,4 +1,4 @@
-// Creation of the Two Dimentional Matrix.... 
+// creation of the Two Dimentional Matrix.... 
 
 // import java.util.*;
 
@@ -87,40 +87,40 @@
 
 //     public static void SpiralMatrix(int matrix[][]) {
 //         int startRow = 0;
-//         int startCol = 0;
+//         int startcol = 0;
 //         int endRow = matrix.length - 1;
-//         int endCol = matrix[0].length - 1;
+//         int endcol = matrix[0].length - 1;
 
-//         while(startRow <= endRow && startCol <= endCol) {
+//         while(startRow <= endRow && startcol <= endcol) {
 
 //             // Top
-//             for(int j = startCol; j <= endCol; j++) {
+//             for(int j = startcol; j <= endcol; j++) {
 //                 System.out.print(matrix[startRow][j] + " ");
 //             }
 
 //             // Right
 //             for(int i = startRow + 1; i <= endRow; i++) {
-//                 System.out.print(matrix[i][endCol] + " ");
+//                 System.out.print(matrix[i][endcol] + " ");
 //             }
 
 //             // Bottom
 //             if(startRow <endRow) {
-//                 for(int j = endCol - 1; j >= startCol; j--) {
+//                 for(int j = endcol - 1; j >= startcol; j--) {
 //                     System.out.print(matrix[endRow][j] + " ");
 //                 }
 //             }
 
 //             // Left
-//             if(startCol < endCol) {
+//             if(startcol < endcol) {
 //                 for(int i = endRow - 1; i > startRow; i--) {
-//                     System.out.print(matrix[i][startCol] + " ");
+//                     System.out.print(matrix[i][startcol] + " ");
 //                 }
 //             }
 
 //             startRow++;
-//             startCol++;
+//             startcol++;
 //             endRow--;
-//             endCol--;
+//             endcol--;
 //         }
 //         System.out.println();
 //     }
@@ -218,22 +218,52 @@
 
 // Print the number of 7’s that are in the 2d array.
 
-import java.util.*;
-public class JavaBasics {
-    public static boolean Printnum(int matrix[][] ) {
-        for(int i=0 ; i<matrix.length ; i++) {
-            for(int j=0 ; j<matrix[0].length ; j++) {
-                if(matrix[i][j] == 7){
-                    System.out.println("The number is Present " +matrix[i][j]);
-                    return true;
-                }
+// import java.util.*;
+// public class JavaBasics {
+//     public static boolean Printnum(int matrix[][] ) {
+//         for(int i=0 ; i<matrix.length ; i++) {
+//             for(int j=0 ; j<matrix[0].length ; j++) {
+//                 if(matrix[i][j] == 7){
+//                     System.out.println("The number is Present " +matrix[i][j]);
+//                     return true;
+//                 }
                 
+//             }
+//         }
+//         System.out.println("Number is not present");
+//         return false;
+//     }
+
+//     public static void main(String args[]) {
+//         int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };
+//         Printnum(matrix);
+//     }
+// }
+
+
+// count the number of 7 is in the matrix;
+
+import java.util.*;
+
+public class JavaBasics {
+    public static void Counnumebr(int matrix[][]) {
+        int count=0;
+        for(int i=0 ; i<matrix.length ; i++ ) {
+            for(int j=0; j<matrix.length ; j++ ){
+                if(matrix[i][j] == 7) {
+                    count++;
+                }
             }
         }
-        System.out.println("Number is not present");
-        return false;
-    }
+        System.out.println("The count of the 7 in the matrix is "+count);
+        
 
+    }
     public static void main(String args[]) {
         int matrix[][] = {
             {1,  2,  3,  4},
@@ -241,6 +271,6 @@ public class JavaBasics {
             {9,  10, 11, 12},
             {13, 14, 15, 16}
         };
-        Printnum(matrix);
+        Counnumebr(matrix);
     }
 }
