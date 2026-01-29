@@ -28,10 +28,32 @@
 // Create the Spacing Between The Latters...
 // import java.util.*;
 
+// public class JavaBasics{
+//     public static void SpaceBet(String full_name){
+//         for(int i=0 ; i<full_name.length() ;i++) {
+//             System.out.println(full_name.charAt(i)+"  ");
+//         }
+
+//     }
+//     public static void main(String args[]) {
+//         String Name = "Shivam";
+//         String Last = "Mishra";
+//         String full_name = Name+Last;
+//         SpaceBet(full_name);
+//     }
+// }
+
+
+// Find the Indexing of the letters...
+
+// import java.util.*;
+
 public class JavaBasics{
     public static void SpaceBet(String full_name){
         for(int i=0 ; i<full_name.length() ;i++) {
-            System.out.println(full_name.charAt(i)+"  ");
+            if(full_name.charAt(i) == 'r'){
+                System.out.println(i+"  ");
+            }
         }
 
     }
