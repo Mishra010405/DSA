@@ -573,7 +573,7 @@ public class JavaBasics{
         for(int i=0 ; i<matrix.length ; i++) {
             for(int j=0 ; j<matrix[0].length ; j++) {
                 if(i+1 == j) {
-                    System.out.println("The Diagonals of the Matrix is - "+matrix[i][j]+" ");
+                    System.out.println("The Secondary Diagonals of the Matrix is - "+matrix[i][j]+" ");
                 }
             }
         }
