@@ -506,34 +506,60 @@
 
 
 // Check if the matrix is ToePlitz Matrix or not..
+// import java.util.*;
+// public class JavaBasics {
+
+//     public static boolean isToeplitz(int matrix[][]) {
+//         int rows = matrix.length;
+//         int cols = matrix[0].length;
+
+//         for (int i = 1; i < rows; i++) {
+//             for (int j = 1; j < cols; j++) {
+//                 if (matrix[i][j] != matrix[i - 1][j - 1]) {
+//                     return false;
+//                 }
+//             }
+//         }
+//         return true;
+//     }
+
+//     public static void main(String args[]) {
+//         int matrix[][] = {
+//             {1, 2, 3, 4},
+//             {5, 1, 2, 3},
+//             {9, 5, 1, 2}
+//         };
+
+//         if (isToeplitz(matrix)) {
+//             System.out.println("Matrix is Toeplitz");
+//         } else {
+//             System.out.println("Matrix is NOT Toeplitz");
+//         }
+//     }
+// }
+
+
+//  Print the Diagonals of the elements ...
+import java.util.* ;
 
 public class JavaBasics {
-
-    public static boolean isToeplitz(int matrix[][]) {
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-
-        for (int i = 1; i < rows; i++) {
-            for (int j = 1; j < cols; j++) {
-                if (matrix[i][j] != matrix[i - 1][j - 1]) {
-                    return false;
+    public static void PrrDiagonals(int matrix[][]) {
+        for(int i=0 ; i<matrix.length ; i++) {
+            for(int j=0 ; j<matrix[0].length ; j++) {
+                if(i==j) {
+                    System.out.println("The Diagonals of the Matrix is - "+matrix[i][j]+" ");
                 }
             }
         }
-        return true;
+
     }
 
     public static void main(String args[]) {
         int matrix[][] = {
-            {1, 2, 3, 4},
-            {5, 1, 2, 3},
-            {9, 5, 1, 2}
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
         };
-
-        if (isToeplitz(matrix)) {
-            System.out.println("Matrix is Toeplitz");
-        } else {
-            System.out.println("Matrix is NOT Toeplitz");
-        }
+        PrrDiagonals(matrix);
     }
 }
