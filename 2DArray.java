@@ -540,26 +540,51 @@
 
 
 //  Print the Diagonals of the elements ...
-import java.util.* ;
 
-public class JavaBasics {
-    public static void PrrDiagonals(int matrix[][]) {
+// import java.util.* ;
+
+// public class JavaBasics {
+//     public static void PrrDiagonals(int matrix[][]) {
+//         for(int i=0 ; i<matrix.length ; i++) {
+//             for(int j=0 ; j<matrix[0].length ; j++) {
+//                 if(i==j) {
+//                     System.out.println("The Diagonals of the Matrix is - "+matrix[i][j]+" ");
+//                 }
+//             }
+//         }
+//     }
+
+//     public static void main(String args[]) {
+//         int matrix[][] = {
+//             {1, 2, 3},
+//             {4, 5, 6},
+//             {7, 8, 9}
+//         };
+//         PrrDiagonals(matrix);
+//     }
+// }
+
+// Print secondary diagonal elements.
+
+import java.util.*;
+
+public class JavaBasics{
+    public static void SecondaryDiagonal(int matrix[][]) {
         for(int i=0 ; i<matrix.length ; i++) {
             for(int j=0 ; j<matrix[0].length ; j++) {
-                if(i==j) {
+                if(i+1 == j) {
                     System.out.println("The Diagonals of the Matrix is - "+matrix[i][j]+" ");
                 }
             }
         }
 
     }
-
     public static void main(String args[]) {
         int matrix[][] = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
+            {1, 2, 3 },
+            {5, 1, 2 },
+            {9, 5, 1}
         };
-        PrrDiagonals(matrix);
+        SecondaryDiagonal(matrix);
     }
 }
