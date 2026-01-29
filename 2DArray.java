@@ -421,34 +421,90 @@
 
 // Reverse The Each row of the matrix..
 
-import java.util.*;
-public class JavaBasics{
-    public static void Reverseth(int matrix[][]){
-        for(int i=0; i<matrix.length; i++){
-        int left=0;
-        int Right= matrix.length-1;
-        while(left<Right){
-            int temp = matrix[i][left];
-            matrix[i][left] = matrix[i][Right];
-            matrix[i][Right] = temp;
+// import java.util.*;
+// public class JavaBasics{
+//     public static void Reverseth(int matrix[][]){
+//         for(int i=0; i<matrix.length; i++){
+//         int left=0;
+//         int Right= matrix.length-1;
+//         while(left<Right){
+//             int temp = matrix[i][left];
+//             matrix[i][left] = matrix[i][Right];
+//             matrix[i][Right] = temp;
 
-            left++;
-            Right--;
-        }
-        }
-        for(int i=0 ; i< matrix.length ; i++) {
-            for(int j=0 ; j<matrix.length; j++) {
-                System.out.println(matrix[i][j]);
-            }
-        }
-    }
-    public static void main(String args[]) {
-       int matrix[][] = {
-            {1,  2,  3,  4},
-            {5,  6,  7,  8},
-            {9,  10, 11, 12},
-            {13, 14, 15, 16}
-        }; 
-        Reverseth(matrix);
-    }
-}
+//             left++;
+//             Right--;
+//         }
+//         }
+//         for(int i=0 ; i< matrix.length ; i++) {
+//             for(int j=0 ; j<matrix.length; j++) {
+//                 System.out.println(matrix[i][j]);
+//             }
+//         }
+//     }
+//     public static void main(String args[]) {
+//        int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         }; 
+//         Reverseth(matrix);
+//     }
+// }
+
+// Reverse each column of matrix.
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static void reversecol(int matrix[][]) {
+//         int row = matrix.length;
+//         int col = matrix[0].length;
+
+//         for (int j = 0; j < col; j++) {
+//             int top = 0;
+//             int bottom = row - 1;
+
+//             while (top < bottom) {
+//                 int temp = matrix[top][j];
+//                 matrix[top][j] = matrix[bottom][j];
+//                 matrix[bottom][j] = temp;
+
+//                 top++;
+//                 bottom--;
+//             }
+//         }
+//     }
+
+//     public static void printcol(int matrix[][]) {
+//         int row = matrix.length;
+//         int col = matrix[0].length;
+
+//         for (int i = 0; i < row; i++) {
+//             for (int j = 0; j < col; j++) {
+//                 System.out.print(matrix[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+
+//     public static void main(String args[]) {
+//         int matrix[][] = {
+//             {1,  2,  3,  4},
+//             {5,  6,  7,  8},
+//             {9,  10, 11, 12},
+//             {13, 14, 15, 16}
+//         };        
+
+//         reversecol(matrix);
+
+//         System.out.println("After Reversing Each Column:");
+//         printcol(matrix);
+//     }
+// }
+
+
+// Check the Luck Number from the array..
+
+int 

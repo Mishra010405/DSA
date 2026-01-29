@@ -364,5 +364,36 @@
 
 
 
+//  Checlk the number is the lucky number...
+import java.util.*;
 
+public class JavaBasics {
+    public static void LuckyNumber(int num[]) {
+        int count = 2;
+        int size = num.length;
+        while(count<= size) {
+            int index = count-1;
+            while(index<size) {
+                for(int i = index  ; i<size-1 ; i++) {
+                    num[i] = num[i+1];
+                }
+                size--;
+
+                index += count-1;
+            }
+            count++;
+        }
+
+        // Print the Lucky number...
+        for(int i=0 ; i<size ; i++) {
+            System.out.println(num[i]+" ");
+        }
+
+    }
+    public static void main(String args[]) {
+        int num[] = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+
+        LuckyNumber(num);
+    }
+}
 
