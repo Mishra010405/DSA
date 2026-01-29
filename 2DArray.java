@@ -216,21 +216,21 @@
 // }
 
 
-// Print the number of 7’s that are in the 2d array.
+// Print the matrixber of 7’s that are in the 2d array.
 
 // import java.util.*;
 // public class JavaBasics {
-//     public static boolean Printnum(int matrix[][] ) {
+//     public static boolean Printmatrix(int matrix[][] ) {
 //         for(int i=0 ; i<matrix.length ; i++) {
 //             for(int j=0 ; j<matrix[0].length ; j++) {
 //                 if(matrix[i][j] == 7){
-//                     System.out.println("The number is Present " +matrix[i][j]);
+//                     System.out.println("The matrixber is Present " +matrix[i][j]);
 //                     return true;
 //                 }
                 
 //             }
 //         }
-//         System.out.println("Number is not present");
+//         System.out.println("matrixber is not present");
 //         return false;
 //     }
 
@@ -241,17 +241,17 @@
 //             {9,  10, 11, 12},
 //             {13, 14, 15, 16}
 //         };
-//         Printnum(matrix);
+//         Printmatrix(matrix);
 //     }
 // }
 
 
-// count the number of 7 is in the matrix;
+// count the matrixber of 7 is in the matrix;
 
 // import java.util.*;
 
 // public class JavaBasics {
-//     public static void Counnumebr(int matrix[][]) {
+//     public static void Counmatrixebr(int matrix[][]) {
 //         int count=0;
 //         for(int i=0 ; i<matrix.length ; i++ ) {
 //             for(int j=0; j<matrix.length ; j++ ){
@@ -271,12 +271,12 @@
 //             {9,  10, 11, 12},
 //             {13, 14, 15, 16}
 //         };
-//         Counnumebr(matrix);
+//         Counmatrixebr(matrix);
 //     }
 // }
 
 
-// Print the sum of the numbers in the Second Rows...
+// Print the sum of the matrixbers in the Second Rows...
 
 // import java.util.*;
 
@@ -312,15 +312,15 @@
 //     public static void TransposeMatrix(int matrix[][]) {
 //         int rows = matrix.length;
 //         int cols = matrix.length;
-//         int num[][] = new int[cols][rows];
+//         int matrix[][] = new int[cols][rows];
 //         for(int i=0 ; i<rows ; i++) {
 //             for(int j= 0 ; j<cols ; j++) {
-//                 num[j][i] = matrix[i][j];
+//                 matrix[j][i] = matrix[i][j];
 //             }
 //         }
 //         for(int i=0 ; i<rows ; i++) {
 //             for(int j=0 ; j<cols ; j++) {
-//                 System.out.println(num[i][j]);
+//                 System.out.println(matrix[i][j]);
 //             }
 //             System.out.println();
 //         }
@@ -505,6 +505,35 @@
 // }
 
 
-// Check the Luck Number from the array..
+// Check if the matrix is ToePlitz Matrix or not..
 
-int 
+public class JavaBasics {
+
+    public static boolean isToeplitz(int matrix[][]) {
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        for (int i = 1; i < rows; i++) {
+            for (int j = 1; j < cols; j++) {
+                if (matrix[i][j] != matrix[i - 1][j - 1]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static void main(String args[]) {
+        int matrix[][] = {
+            {1, 2, 3, 4},
+            {5, 1, 2, 3},
+            {9, 5, 1, 2}
+        };
+
+        if (isToeplitz(matrix)) {
+            System.out.println("Matrix is Toeplitz");
+        } else {
+            System.out.println("Matrix is NOT Toeplitz");
+        }
+    }
+}
