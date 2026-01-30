@@ -189,30 +189,64 @@
 
 // Print the String into the upper Case...
 
+// public class JavaBasics {
+
+//     public static String toUpperCase(String name) {
+//         StringBuilder sb = new StringBuilder("");
+
+//         // Capitalize the first character
+//         char ch = Character.toUpperCase(name.charAt(0));
+//         sb.append(ch);
+
+//         for(int i = 1; i < name.length(); i++) {
+//             if(name.charAt(i) == ' ' && i < name.length() - 1) {
+//                 sb.append(' ');
+//                 i++;
+//                 sb.append(Character.toUpperCase(name.charAt(i)));
+//             } else {
+//                 sb.append(name.charAt(i));
+//             }
+//         }
+
+//         return sb.toString();
+//     }
+
+//     public static void main(String[] args) {
+//         String name = "hi, my name is shivam mishra";
+//         System.out.println(toUpperCase(name));
+//     }
+// }
+
+
+
+// Count the Strings into the Sthngrs..
+
+
 public class JavaBasics {
 
-    public static String toUpperCase(String name) {
-        StringBuilder sb = new StringBuilder("");
+    public static String CompressString(String name) {
+        String newstr = "";
 
-        // Capitalize the first character
-        char ch = Character.toUpperCase(name.charAt(0));
-        sb.append(ch);
+        for(int i = 0; i < name.length(); i++) {
+            int counter = 1;
 
-        for(int i = 1; i < name.length(); i++) {
-            if(name.charAt(i) == ' ' && i < name.length() - 1) {
-                sb.append(' ');
+            while(i < name.length() - 1 && name.charAt(i) == name.charAt(i + 1)) {
+                counter++;
                 i++;
-                sb.append(Character.toUpperCase(name.charAt(i)));
-            } else {
-                sb.append(name.charAt(i));
+            }
+
+            newstr += name.charAt(i);
+
+            if(counter > 1) {
+                newstr += counter;
             }
         }
 
-        return sb.toString();
+        return newstr;
     }
 
     public static void main(String[] args) {
-        String name = "hi, my name is shivam mishra";
-        System.out.println(toUpperCase(name));
+        String name = "aaabcccdd";
+        System.out.println(CompressString(name));
     }
 }
