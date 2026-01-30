@@ -177,12 +177,42 @@
 
 // String Builders ...
 
+// public class JavaBasics {
+//     public static void main(String args[]) {
+//         StringBuilder sb = new StringBuilder("");
+//         for(char ch='a'; ch<='z' ; ch++) {
+//             System.out.println((sb.append(ch)));
+//         }
+//         System.out.println();
+//     }
+// }
+
+// Print the String into the upper Case...
+
 public class JavaBasics {
-    public static void main(String args[]) {
+
+    public static String toUpperCase(String name) {
         StringBuilder sb = new StringBuilder("");
-        for(char ch='a'; ch<='z' ; ch++) {
-            System.out.println((sb.append(ch)));
+
+        // Capitalize the first character
+        char ch = Character.toUpperCase(name.charAt(0));
+        sb.append(ch);
+
+        for(int i = 1; i < name.length(); i++) {
+            if(name.charAt(i) == ' ' && i < name.length() - 1) {
+                sb.append(' ');
+                i++;
+                sb.append(Character.toUpperCase(name.charAt(i)));
+            } else {
+                sb.append(name.charAt(i));
+            }
         }
-        System.out.println();
+
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String name = "hi, my name is shivam mishra";
+        System.out.println(toUpperCase(name));
     }
 }
