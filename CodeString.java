@@ -136,20 +136,40 @@
 
 // String Comperistion...
 
+// public class JavaBasics {
+
+//     public static void StringComparison(String name1, String name2) {
+//         if(name1.equals(name2)) {
+//             System.out.println("The names are Equal...");
+//         } else {
+//             System.out.println("The names are not Equal...");
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         String name1 = "Shivam Mishra";
+//         String name2 = "Ujjwal Mishra";
+
+//         StringComparison(name1, name2);
+//     }
+// }
+
+// Print the Sub String from the COdess..
+
 public class JavaBasics {
 
-    public static void StringComparison(String name1, String name2) {
-        if(name1.equals(name2)) {
-            System.out.println("The names are Equal...");
-        } else {
-            System.out.println("The names are not Equal...");
+    public static String Substring(String name, int si, int ei) {
+        String substr = "";
+
+        for(int i = si; i < ei; i++) {
+            substr += name.charAt(i);
         }
+
+        return substr;
     }
 
     public static void main(String[] args) {
-        String name1 = "Shivam Mishra";
-        String name2 = "Ujjwal Mishra";
-
-        StringComparison(name1, name2);
+        String name = "SHivamMishra";
+        System.out.println(Substring(name, 0, 5));
     }
 }
