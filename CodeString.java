@@ -253,22 +253,42 @@
 
 
 // Count how many times lowercase vowels occurred in a String entered by the user...
-public class JavaBasics {
 
-    public static int lowercase(String name) {
-        int counter = 0;
+// public class JavaBasics {
+
+//     public static int lowercase(String name) {
+//         int counter = 0;
+
+//         for(int i = 0; i < name.length(); i++) {
+//             if(Character.isLowerCase(name.charAt(i))) {
+//                 counter++;
+//             }
+//         }
+//         return counter;
+//     }
+//     public static void main(String[] args) {
+//         String name = "ShivamMishra";
+//         System.out.println(lowercase(name));
+//     }
+// }
+
+
+// To convert it into the lowercase ...
+
+public class JavaBasics{
+    public static String tolowercase(String name) {
+        StringBuilder sb = new StringBuilder("");
 
         for(int i = 0; i < name.length(); i++) {
-            if(Character.isLowerCase(name.charAt(i))) {
-                counter++;
-            }
+            char ch = Character.toLowerCase(name.charAt(i));
+            sb.append(ch);
         }
 
-        return counter;
+        return sb.toString();
     }
 
-    public static void main(String[] args) {
-        String name = "ShivamMishra";
-        System.out.println(lowercase(name));
+    public static void main(String args[]) {
+        String name = "SHivam Mishra";
+        System.out.println(tolowercase(name));
     }
 }
