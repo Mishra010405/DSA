@@ -156,20 +156,33 @@
 
 // Print the Sub String from the COdess..
 
+// public class JavaBasics {
+
+//     public static String Substring(String name, int si, int ei) {
+//         String substr = "";
+
+//         for(int i = si; i < ei; i++) {
+//             substr += name.charAt(i);
+//         }
+
+//         return substr;
+//     }
+
+//     public static void main(String[] args) {
+//         String name = "SHivamMishra";
+//         System.out.println(Substring(name, 0, 5));
+//     }
+// }
+
+
+// String Builders ...
+
 public class JavaBasics {
-
-    public static String Substring(String name, int si, int ei) {
-        String substr = "";
-
-        for(int i = si; i < ei; i++) {
-            substr += name.charAt(i);
+    public static void main(String args[]) {
+        StringBuilder sb = new StringBuilder("");
+        for(char ch='a'; ch<='z' ; ch++) {
+            System.out.println((sb.append(ch)));
         }
-
-        return substr;
-    }
-
-    public static void main(String[] args) {
-        String name = "SHivamMishra";
-        System.out.println(Substring(name, 0, 5));
+        System.out.println();
     }
 }
