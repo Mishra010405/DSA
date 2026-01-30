@@ -275,20 +275,34 @@
 
 // To convert it into the lowercase ...
 
-public class JavaBasics{
-    public static String tolowercase(String name) {
-        StringBuilder sb = new StringBuilder("");
+// public class JavaBasics{
+//     public static String tolowercase(String name) {
+//         StringBuilder sb = new StringBuilder("");
 
-        for(int i = 0; i < name.length(); i++) {
-            char ch = Character.toLowerCase(name.charAt(i));
-            sb.append(ch);
-        }
+//         for(int i = 0; i < name.length(); i++) {
+//             char ch = Character.toLowerCase(name.charAt(i));
+//             sb.append(ch);
+//         }
 
-        return sb.toString();
-    }
+//         return sb.toString();
+//     }
 
-    public static void main(String args[]) {
-        String name = "SHivam Mishra";
-        System.out.println(tolowercase(name));
+//     public static void main(String args[]) {
+//         String name = "SHivam Mishra";
+//         System.out.println(tolowercase(name));
+//     }
+// }
+
+
+// String Comperision Questions..
+
+
+public class Solution {
+    public static void main(String[] args) {
+        String str = "ShradhaDidi";
+        String str1 = "ApnaCollege";
+        String str2 = "ShradhaDidi";
+
+        System.out.println(str.equals(str1) + " " + str.equals(str2));
     }
 }
