@@ -222,31 +222,53 @@
 // Count the Strings into the Sthngrs..
 
 
+// public class JavaBasics {
+
+//     public static String CompressString(String name) {
+//         String newstr = "";
+
+//         for(int i = 0; i < name.length(); i++) {
+//             int counter = 1;
+
+//             while(i < name.length() - 1 && name.charAt(i) == name.charAt(i + 1)) {
+//                 counter++;
+//                 i++;
+//             }
+
+//             newstr += name.charAt(i);
+
+//             if(counter > 1) {
+//                 newstr += counter;
+//             }
+//         }
+
+//         return newstr;
+//     }
+
+//     public static void main(String[] args) {
+//         String name = "aaabcccdd";
+//         System.out.println(CompressString(name));
+//     }
+// }
+
+
+// Count how many times lowercase vowels occurred in a String entered by the user...
 public class JavaBasics {
 
-    public static String CompressString(String name) {
-        String newstr = "";
+    public static int lowercase(String name) {
+        int counter = 0;
 
         for(int i = 0; i < name.length(); i++) {
-            int counter = 1;
-
-            while(i < name.length() - 1 && name.charAt(i) == name.charAt(i + 1)) {
+            if(Character.isLowerCase(name.charAt(i))) {
                 counter++;
-                i++;
-            }
-
-            newstr += name.charAt(i);
-
-            if(counter > 1) {
-                newstr += counter;
             }
         }
 
-        return newstr;
+        return counter;
     }
 
     public static void main(String[] args) {
-        String name = "aaabcccdd";
-        System.out.println(CompressString(name));
+        String name = "ShivamMishra";
+        System.out.println(lowercase(name));
     }
 }
