@@ -135,3 +135,21 @@
 
 
 // String Comperistion...
+
+public class JavaBasics {
+
+    public static void StringComparison(String name1, String name2) {
+        if(name1.equals(name2)) {
+            System.out.println("The names are Equal...");
+        } else {
+            System.out.println("The names are not Equal...");
+        }
+    }
+
+    public static void main(String[] args) {
+        String name1 = "Shivam Mishra";
+        String name2 = "Ujjwal Mishra";
+
+        StringComparison(name1, name2);
+    }
+}
