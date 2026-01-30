@@ -297,12 +297,27 @@
 // String Comperision Questions..
 
 
-public class Solution {
-    public static void main(String[] args) {
-        String str = "ShradhaDidi";
-        String str1 = "ApnaCollege";
-        String str2 = "ShradhaDidi";
+// public class Solution {
+//     public static void main(String[] args) {
+//         String str = "ShradhaDidi";
+//         String str1 = "ApnaCollege";
+//         String str2 = "ShradhaDidi";
 
-        System.out.println(str.equals(str1) + " " + str.equals(str2));
+//         System.out.println(str.equals(str1) + " " + str.equals(str2));
+//     }
+// }
+
+
+// replace the String from the letters..
+
+public class JavaBasics {
+    public static String ReplaceString(String name) {
+        String str = name.replaceAll("Shivam", "Sadhvi");
+        return str;
+    }
+
+    public static void main(String args[]) {
+        String name = "Shivam Mishra ";
+        System.out.println(ReplaceString(name));
     }
 }
