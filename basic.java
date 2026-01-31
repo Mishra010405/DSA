@@ -293,45 +293,68 @@
 
 // Diamon Printing 
 
-import java.util.* ;
+// import java.util.* ;
 
-public class JavaBasics {
-    public static void DIamonprin(int n){
+// public class JavaBasics {
+//     public static void DIamonprin(int n){
 
-        // Upper half
-        for(int i = 1; i <= n; i++) {
+//         // Upper half
+//         for(int i = 1; i <= n; i++) {
 
-            // space 
-            for(int j = 1; j <= n - i; j++){  
-                System.out.print(" ");        
-            }
+//             // space 
+//             for(int j = 1; j <= n - i; j++){  
+//                 System.out.print(" ");        
+//             }
 
-            // Stars
-            for(int j = 1; j <= 2 * i - 1; j++){  
-                System.out.print("*");           
-            }
+//             // Stars
+//             for(int j = 1; j <= 2 * i - 1; j++){  
+//                 System.out.print("*");           
+//             }
 
-            System.out.println();
+//             System.out.println();
+//         }
+
+//         // Lower half
+//         for(int i = n - 1; i >= 1; i--) {   
+
+//             // space 
+//             for(int j = 1; j <= n - i; j++){  
+//                 System.out.print(" ");        
+//             }
+
+//             // Stars
+//             for(int j = 1; j <= 2 * i - 1; j++){  
+//                 System.out.print("*");           
+//             }
+
+//             System.out.println();
+//         }
+//     }
+
+//     public static void main(String args[]){
+//         DIamonprin(5);
+//     }
+// }
+
+
+// Geomatric progression ....
+
+import java.util.Scanner;
+
+public class GP {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        int a = sc.nextInt();   
+        int r = sc.nextInt();   
+        int n = sc.nextInt();   
+
+        int term = a;
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print(term + " ");
+            term = term * r;
         }
-
-        // Lower half
-        for(int i = n - 1; i >= 1; i--) {   
-
-            // space 
-            for(int j = 1; j <= n - i; j++){  
-                System.out.print(" ");        
-            }
-
-            // Stars
-            for(int j = 1; j <= 2 * i - 1; j++){  
-                System.out.print("*");           
-            }
-
-            System.out.println();
-        }
-    }
-
-    public static void main(String args[]){
-        DIamonprin(5);
     }
 }

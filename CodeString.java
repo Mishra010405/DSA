@@ -310,14 +310,17 @@
 
 // replace the String from the letters..
 
-public class JavaBasics {
-    public static String ReplaceString(String name) {
-        String str = name.replaceAll("Shivam", "Sadhvi");
-        return str;
-    }
+// public class JavaBasics {
+//     public static String ReplaceString(String name) {
+//         String str = name.replaceAll("Shivam", "Sadhvi");
+//         return str;
+//     }
 
-    public static void main(String args[]) {
-        String name = "Shivam Mishra ";
-        System.out.println(ReplaceString(name));
-    }
-}
+//     public static void main(String args[]) {
+//         String name = "Shivam Mishra ";
+//         System.out.println(ReplaceString(name));
+//     }
+// }
+
+
+// 
