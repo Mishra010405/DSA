@@ -327,7 +327,10 @@ import java.util.*;
 
 public class StringDemo {
     public static void main(String args[]) {
-        String full_name = "Tony Stark";
-        System.out.println(full_name.length());
+        String full_name = "Tony Stark ";
+        String full_name2 = "Shivam Mishra";
+        String total = full_name+full_name2;
+        System.out.println(total);
+        System.out.println(total.charAt(5));
     }
 }
