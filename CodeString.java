@@ -323,26 +323,34 @@
 // }
 
 
-// Print the Sub String ...
+
 
 import java.util.*;
 
 public class JavaBasics {
-    // public static void SubString(String str , int si , int ei) {
-       
-    //     }
 
-    public static void main(String args [ ]) {
-         String fruits[] = ["Apple" , "Mango" , "Banana"];
+    public static String toUpperCase(String str) {
+        StringBuilder sb = new StringBuilder("");
 
-        String largest = fruits[0];
-        for(int i=0 ; i<fruits.length ; i++) {
-            if(largest.compareTO(fruits[i]<0)) {
-                largest = fruits[i];
+        // Capitalize first character
+        char ch = Character.toUpperCase(str.charAt(0));
+        sb.append(ch);
+
+        for (int i = 1; i < str.length(); i++) {
+            if (str.charAt(i) == ' ' && i < str.length() - 1) {
+                sb.append(str.charAt(i)); // append space
+                i++;
+                sb.append(Character.toUpperCase(str.charAt(i)));
+            } else {
+                sb.append(str.charAt(i));
             }
         }
-        System.out.println(largest);
-        
-        
+
+        return sb.toString();
+    }
+
+    public static void main(String args[]) {
+        String str = "hi i am shivam";
+        System.out.println(toUpperCase(str));
     }
 }
