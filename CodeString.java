@@ -329,28 +329,28 @@ import java.util.*;
 
 public class JavaBasics {
 
-    public static String toUpperCase(String str) {
-        StringBuilder sb = new StringBuilder("");
+    public static String Compress(String str) {
+        String newstr = "";
 
-        // Capitalize first character
-        char ch = Character.toUpperCase(str.charAt(0));
-        sb.append(ch);
+        for (int i = 0; i < str.length(); i++) {
+            int count = 1;
 
-        for (int i = 1; i < str.length(); i++) {
-            if (str.charAt(i) == ' ' && i < str.length() - 1) {
-                sb.append(str.charAt(i)); // append space
+            while (i < str.length() - 1 && str.charAt(i) == str.charAt(i + 1)) {
+                count++;
                 i++;
-                sb.append(Character.toUpperCase(str.charAt(i)));
-            } else {
-                sb.append(str.charAt(i));
+            }
+
+            newstr += str.charAt(i);
+
+            if (count > 1) {
+                newstr += count;
             }
         }
-
-        return sb.toString();
+        return newstr;
     }
 
     public static void main(String args[]) {
-        String str = "hi i am shivam";
-        System.out.println(toUpperCase(str));
+        String str = "aaaabbbbccc";
+        System.out.println(Compress(str));
     }
 }
