@@ -328,17 +328,21 @@
 import java.util.*;
 
 public class JavaBasics {
-    public static void SubString(String str , int si , int ei) {
-        int substr = " ";
-        for(int i=si ; i<ei ; i++) {
-            substr += charAt(i);
-
-        }
-
-    }
+    // public static void SubString(String str , int si , int ei) {
+       
+    //     }
 
     public static void main(String args [ ]) {
-        String str = "Helloworld";
-        System..out.println(SubString(str , 0 , 4));
+         String fruits[] = ["Apple" , "Mango" , "Banana"];
+
+        String largest = fruits[0];
+        for(int i=0 ; i<fruits.length ; i++) {
+            if(largest.compareTO(fruits[i]<0)) {
+                largest = fruits[i];
+            }
+        }
+        System.out.println(largest);
+        
+        
     }
 }
