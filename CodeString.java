@@ -323,26 +323,23 @@
 // }
 
 
-public class JavaBasics {
+import java.util.*;
 
-    public static boolean Polindrme(String name) {
-        int n = name.length();
-        
-        for(int i = 0; i < n / 2; i++) {
-            if(name.charAt(i) != name.charAt(n - i - 1)) {
-                return false;
-            }
+public class JavaBasics {
+    public static void getShortestPath(String path) {
+        String S1 = "Tony";
+        String S3 = new String("Toney");
+
+        if(S1.equals(S3)) {
+            System.out.println("String are equals");
         }
-        return true;
+        else {
+            System..out.println("String are not equal");
+        }
     }
 
-    public static void main(String[] args) {
-        String name = "CarraC";
+    public static void main(String args[]) {
+        String path = "WNEENESENNN";
 
-        if(Polindrme(name)) {
-            System.out.println("So it is the palindrome");
-        } else {
-            System.out.println("So it is not the palindrome");
-        }
     }
 }
