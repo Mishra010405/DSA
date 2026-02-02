@@ -323,23 +323,22 @@
 // }
 
 
+// Print the Sub String ...
+
 import java.util.*;
 
 public class JavaBasics {
-    public static void getShortestPath(String path) {
-        String S1 = "Tony";
-        String S3 = new String("Toney");
+    public static void SubString(String str , int si , int ei) {
+        int substr = " ";
+        for(int i=si ; i<ei ; i++) {
+            substr += charAt(i);
 
-        if(S1.equals(S3)) {
-            System.out.println("String are equals");
         }
-        else {
-            System..out.println("String are not equal");
-        }
+
     }
 
-    public static void main(String args[]) {
-        String path = "WNEENESENNN";
-
+    public static void main(String args [ ]) {
+        String str = "Helloworld";
+        System..out.println(SubString(str , 0 , 4));
     }
 }
