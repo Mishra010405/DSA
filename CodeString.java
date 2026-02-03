@@ -431,20 +431,46 @@
 // Remove all the space from the string ...
 // remove all the spaces from the string...
 
+// public class JavaBasics {
+//     public static String RemoveallSpacs(String str) {
+//         String result = "";
+
+//         for (int i = 0; i < str.length(); i++) {
+//             if (str.charAt(i) != ' ') {
+//                 result = result + str.charAt(i);
+//             }
+//         }
+//         return result;
+//     }
+
+//     public static void main(String args[]) {
+//         String str = "Shivam Mishra";
+//         System.out.println(RemoveallSpacs(str));
+//     }
+// }
+
+
+// Reverse the word in the sentences...
+
 public class JavaBasics {
-    public static String RemoveallSpacs(String str) {
-        String result = "";
+    public static String reverseword(String str) {
+        String rev = "";
+        String word = "";
 
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) != ' ') {
-                result = result + str.charAt(i);
+            if (str.charAt(i) == ' ') {
+                rev = word + " " + rev;
+                word = "";
+            } else {
+                word = word + str.charAt(i);
             }
         }
-        return result;
+        rev = word + " " + rev;
+        return rev.trim();
     }
 
     public static void main(String args[]) {
-        String str = "Shivam Mishra";
-        System.out.println(RemoveallSpacs(str));
+        String str = "i love you";
+        System.out.println(reverseword(str));
     }
 }
