@@ -477,22 +477,43 @@
 
 // Check if the Strings contains only the digits..
 
+// public class JavaBasics {
+//     public static boolean Stringdigits(String str) {
+//         for(int i=0 ; i<str.length() ; i++) {
+//         if(str.charAt(i)>= '0' && str.charAt(i) <= '9') {
+//             return true;
+//         }
+//         }
+//         return false;
+//     }
+//     public static void main(String args[]) {
+//         String str = "safdgfhfh33fbfn";
+//         if(Stringdigits(str)) {
+//             System.out.println("String contains the digits");
+//         }
+//         else {
+//             System.out.println("String does not contains the digits");
+//         }
+//     }
+// }
+
+// the Maximum Occuring Character from the String ...
+
 public class JavaBasics {
-    public static boolean Stringdigits(String str) {
+    public static void repeatcharacter(String str) {
         for(int i=0 ; i<str.length() ; i++) {
-        if(str.charAt(i)>= '0' && str.charAt(i) <= '9') {
-            return true;
+            char ch = str.charAt(i);
+            for(int j=0 ; j<str.length() ; j++) {
+                if(ch==str.charAt(j)) {
+                    System.out.println(ch);
+                    break;
+                }
+            }
         }
-        }
-        return false;
     }
+
     public static void main(String args[]) {
-        String str = "safdgfhfh33fbfn";
-        if(Stringdigits(str)) {
-            System.out.println("String contains the digits");
-        }
-        else {
-            System.out.println("String does not contains the digits");
-        }
+        String str = "sabdfegdgaSaa";
+        repeatingCharacter(str);
     }
 }
