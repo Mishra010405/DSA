@@ -452,25 +452,47 @@
 
 // Reverse the word in the sentences...
 
+// public class JavaBasics {
+//     public static String reverseword(String str) {
+//         String rev = "";
+//         String word = "";
+
+//         for (int i = 0; i < str.length(); i++) {
+//             if (str.charAt(i) == ' ') {
+//                 rev = word + " " + rev;
+//                 word = "";
+//             } else {
+//                 word = word + str.charAt(i);
+//             }
+//         }
+//         rev = word + " " + rev;
+//         return rev.trim();
+//     }
+
+//     public static void main(String args[]) {
+//         String str = "i love you";
+//         System.out.println(reverseword(str));
+//     }
+// }
+
+// Check if the Strings contains only the digits..
+
 public class JavaBasics {
-    public static String reverseword(String str) {
-        String rev = "";
-        String word = "";
-
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == ' ') {
-                rev = word + " " + rev;
-                word = "";
-            } else {
-                word = word + str.charAt(i);
-            }
+    public static boolean Stringdigits(String str) {
+        for(int i=0 ; i<str.length() ; i++) {
+        if(str.charAt(i)>= '0' && str.charAt(i) <= '9') {
+            return true;
         }
-        rev = word + " " + rev;
-        return rev.trim();
+        }
+        return false;
     }
-
     public static void main(String args[]) {
-        String str = "i love you";
-        System.out.println(reverseword(str));
+        String str = "safdgfhfh33fbfn";
+        if(Stringdigits(str)) {
+            System.out.println("String contains the digits");
+        }
+        else {
+            System.out.println("String does not contains the digits");
+        }
     }
 }
