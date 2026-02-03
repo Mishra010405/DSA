@@ -374,30 +374,56 @@
 
 // Count the Consonents in the Strings ...
 
+// public class JavaBasics {
+//     public static int countVowels(String str) {
+//         int count = 0;
+
+//         for (int i = 0; i < str.length(); i++) {
+//             char ch = str.charAt(i);
+
+//             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+//                 System.out.println("The count of Vowels are -> "+ch);  
+                
+//             }
+//             else {
+//                 System.out.println("The Consonets are "+ch);
+//                 count++;
+                
+//             }
+            
+//         }
+//         return count;
+//     }
+
+//     public static void main(String args[]) {
+//         String str = "abcdef";
+//         System.out.println(countVowels(str));
+//     }
+// }
+
 public class JavaBasics {
-    public static int countVowels(String str) {
-        int count = 0;
+    public static void countVowels(String str) {
+        int vowels = 0;
+        int consonants = 0;
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
 
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-                System.out.println("The count of Vowels are -> "+ch);  
-                
+            if (ch >= 'a' && ch <= 'z') {   
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                    vowels++;
+                } else {
+                    consonants++;
+                }
             }
-            else {
-                System.out.println("The Consonets are "+ch);
-                count++;
-                
-            }
-            
         }
-        return count;
+
+        System.out.println("The vowels are: " + vowels);
+        System.out.println("The consonants are: " + consonants);
     }
 
     public static void main(String args[]) {
         String str = "abcdef";
-        System.out.println(countVowels(str));
+        countVowels(str);
     }
 }
-
