@@ -401,26 +401,50 @@
 //     }
 // }
 
+
+// COunt the Vowles and Consontents Together...
+// public class JavaBasics {
+//     public static void CountString(String str) {
+//         int vowels=0 ; 
+//         int Consonants=0;
+//         for(int i=0 ; i<str.length() ; i++) {
+//             char ch  = Character.toLowerCase(str.charAt(i));
+//             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+//                     vowels++;
+//                 } else {
+//                     Consonants++;
+//                 }
+//         }
+//         System.out.println("The Vowles Are "+ vowels);
+//         System.out.println("The COnsonents Are "+ Consonants );
+
+
+//     }
+
+//     public static void main(String args[]) {
+//         String str = "addsgbfbfbfb";
+//         CountString(str);
+//     }
+// }
+
+
+// Remove all the space from the string ...
+// remove all the spaces from the string...
+
 public class JavaBasics {
-    public static void CountString(String str) {
-        int vowels=0 ; 
-        int Consonants=0;
-        for(int i=0 ; i<str.length() ; i++) {
-            char ch  = Character.toLowerCase(str.charAt(i));
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-                    vowels++;
-                } else {
-                    Consonants++;
-                }
+    public static String RemoveallSpacs(String str) {
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != ' ') {
+                result = result + str.charAt(i);
+            }
         }
-        System.out.println("The Vowles Are "+ vowels);
-        System.out.println("The COnsonents Are "+ Consonants );
-
-
+        return result;
     }
 
     public static void main(String args[]) {
-        String str = "addsgbfbfbfb";
-        CountString(str);
+        String str = "Shivam Mishra";
+        System.out.println(RemoveallSpacs(str));
     }
 }
