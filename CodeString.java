@@ -499,21 +499,42 @@
 
 // the Maximum Occuring Character from the String ...
 
-public class JavaBasics {
-    public static void repeatcharacter(String str) {
+// public class JavaBasics {
+//     public static void repeatcharacter(String str) {
+//         for(int i=0 ; i<str.length() ; i++) {
+//             char ch = str.charAt(i);
+//             for(int j=0 ; j<str.length() ; j++) {
+//                 if(ch==str.charAt(j)) {
+//                     System.out.println(ch);
+//                     break;
+//                 }
+//             }
+//         }
+//     }
+
+//     public static void main(String args[]) {
+//         String str = "sabdfegdgaSaab";
+//         repeatingCharacter(str);
+//     }
+// }
+
+
+// Removal of Special Characters...
+public class JavaBasics{
+    public static String SpecialString(String str) {
+        String result = "";
         for(int i=0 ; i<str.length() ; i++) {
             char ch = str.charAt(i);
-            for(int j=0 ; j<str.length() ; j++) {
-                if(ch==str.charAt(j)) {
-                    System.out.println(ch);
-                    break;
-                }
+             if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+                result += ch;
             }
         }
-    }
+        return result;
+        }
 
+    
     public static void main(String args[]) {
-        String str = "sabdfegdgaSaab";
-        repeatingCharacter(str);
+        String str = "He@llo! Wo#rld$123";
+        System.out.println(SpecialString(str));
     }
 }
