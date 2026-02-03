@@ -343,7 +343,36 @@
 // }
 
 
-// Count the Vowels And Consonents in the Strings ...
+// Count the Vowels in the Strings ...
+
+// public class JavaBasics {
+//     public static int countVowels(String str) {
+//         int count = 0;
+
+//         for (int i = 0; i < str.length(); i++) {
+//             char ch = str.charAt(i);
+
+//             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+//                 System.out.println("The count of Vowels are -> "+ch);  
+//                 count++;
+//             }
+//             else {
+//                 System.out.println("The Consonets are "+ch);
+                
+//             }
+            
+//         }
+//         return count;
+//     }
+
+//     public static void main(String args[]) {
+//         String str = "abcdef";
+//         System.out.println(countVowels(str));
+//     }
+// }
+
+
+// Count the Consonents in the Strings ...
 
 public class JavaBasics {
     public static int countVowels(String str) {
@@ -354,10 +383,11 @@ public class JavaBasics {
 
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                 System.out.println("The count of Vowels are -> "+ch);  
-                count++;
+                
             }
             else {
                 System.out.println("The Consonets are "+ch);
+                count++;
                 
             }
             
@@ -370,3 +400,4 @@ public class JavaBasics {
         System.out.println(countVowels(str));
     }
 }
+
