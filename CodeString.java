@@ -513,7 +513,7 @@ public class JavaBasics {
     }
 
     public static void main(String args[]) {
-        String str = "sabdfegdgaSaa";
+        String str = "sabdfegdgaSaab";
         repeatingCharacter(str);
     }
 }
