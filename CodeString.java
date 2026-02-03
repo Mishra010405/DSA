@@ -326,18 +326,47 @@
 
 //  Reverse The String...
 
-public class JavaBasics {
+// public class JavaBasics {
 
-    public static String reversing(String str) {
-        String rev = "";
-        for (int i = str.length() - 1; i >= 0; i--) {
-            rev += str.charAt(i);
+//     public static String reversing(String str) {
+//         String rev = "";
+//         for (int i = str.length() - 1; i >= 0; i--) {
+//             rev += str.charAt(i);
+//         }
+//         return rev;
+//     }
+
+//     public static void main(String args[]) {
+//         String str = "Shivam";
+//         System.out.println(reversing(str));
+//     }
+// }
+
+
+// Count the Vowels And Consonents in the Strings ...
+
+public class JavaBasics {
+    public static int countVowels(String str) {
+        int count = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                System.out.println("The count of Vowels are -> "+ch);  
+                count++;
+            }
+            else {
+                System.out.println("The Consonets are "+ch);
+                
+            }
+            
         }
-        return rev;
+        return count;
     }
 
     public static void main(String args[]) {
-        String str = "Shivam";
-        System.out.println(reversing(str));
+        String str = "abcdef";
+        System.out.println(countVowels(str));
     }
 }
