@@ -142,16 +142,20 @@
 
 // Clear Range of the bits...
 
-public class JavaBasics{
+// public class JavaBasics{
 
-    public static int clearBitRange(int n , int i , int j) {
-        int a = ((~0)<<(j+1));
-        int b = ((1<<i)-1);
-        int bitmask  = a|b;
-        return n & bitmask;
+//     public static int clearBitRange(int n , int i , int j) {
+//         int a = ((~0)<<(j+1));
+//         int b = ((1<<i)-1);
+//         int bitmask  = a|b;
+//         return n & bitmask;
 
-        }
-    public static void main(String args[]) {
-        System.out.println(clearBitRange(13,2,2));
-    }
-    }   
+//         }
+//     public static void main(String args[]) {
+//         System.out.println(clearBitRange(13,2,2));
+//     }
+//     }   
+
+
+// Check if the number is Power of two or not...
+
