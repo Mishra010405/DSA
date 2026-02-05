@@ -62,23 +62,26 @@
 
 // Another Method to Check Even or Odd number....
 
-import java.util.*;
+// import java.util.*;
 
-public class JavaBasics {
-    public static void OddEvenNum(int num) {
-        int bitmask = 1;
-        if((num & bitmask)==0) {
-            System.out.println("Number is the Even number");
-        }
-        else {
-            System.out.println("Number is the Odd number");
-        }
-    }
+// public class JavaBasics {
+//     public static void OddEvenNum(int num) {
+//         int bitmask = 1;
+//         if((num & bitmask)==0) {
+//             System.out.println("Number is the Even number");
+//         }
+//         else {
+//             System.out.println("Number is the Odd number");
+//         }
+//     }
 
-    public static void main(String args[]) {
-        OddEvenNum(3);
-        OddEvenNum(4);
-        OddEvenNum(6);
-        OddEvenNum(7);
-    }
-}
+//     public static void main(String args[]) {
+//         OddEvenNum(3);
+//         OddEvenNum(4);
+//         OddEvenNum(6);
+//         OddEvenNum(7);
+//     }
+// }
+
+
+// Program to get ith Bit...
