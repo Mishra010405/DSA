@@ -159,15 +159,34 @@
 
 // Check if the number is Power of two or not...
 
+// public class JavaBasics {
+
+//     public static boolean isPower(int num) {
+
+//         return (num & (num - 1)) == 0;
+//     }
+
+//     public static void main(String args[]) {
+
+//         System.out.println(isPower(15));
+//     }
+// }
+
+
+// Count Set bits in a number...
+
 public class JavaBasics {
+    public static int CountsetBits(int n) {
+        int count=0 ; 
+        while(n>0) {
+            if((n&1) != 0) {
+                count++;
+            }
+            nn>>1;
+        }
 
-    public static boolean isPower(int num) {
-
-        return (num & (num - 1)) == 0;
     }
-
     public static void main(String args[]) {
-
-        System.out.println(isPower(15));
+        System.out.println(CountsetBits(13));
     }
 }
