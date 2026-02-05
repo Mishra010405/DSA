@@ -127,14 +127,21 @@
 
 // Clear ith bit ...
 
-public class JavaBasics {
-    public static int ClearIthBit(int num , int i) {
-        int bitmask = ~(1<<i);
-        return num & bitmask;
+// public class JavaBasics {
+//     public static int ClearIthBit(int num , int i) {
+//         int bitmask = ~(1<<i);
+//         return num & bitmask;
 
-    }
-    public static void main(String args[]) {
-        System.out.println(ClearIthBit(13,2));
+//     }
+//     public static void main(String args[]) {
+//         System.out.println(ClearIthBit(13,2));
 
-    }
+//     }
+// }
+
+
+// Clear Range of the bits...
+public static int clearBitRange(int n , int i , int j) {
+
 }
+p
