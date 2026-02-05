@@ -38,24 +38,47 @@
 
 // Check if the number is Odd or Even....
 
+// import java.util.*;
+
+// public class JavaBasics {
+
+//     public static void Oddeven(int num) {
+//         if (num % 2 == 0) {
+//             System.out.println("The number is Even");
+//         } else {
+//             System.out.println("The number is Odd");
+//         }
+//     }
+
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.print("Enter a number: ");
+//         int num = sc.nextInt();
+
+//         Oddeven(num);
+//     }
+// }
+
+// Another Method to Check Even or Odd number....
+
 import java.util.*;
 
 public class JavaBasics {
-
-    public static void Oddeven(int num) {
-        if (num % 2 == 0) {
-            System.out.println("The number is Even");
-        } else {
-            System.out.println("The number is Odd");
+    public static void OddEvenNum(int num) {
+        int bitmask = 1;
+        if((num & bitmask)==0) {
+            System.out.println("Number is the Even number");
+        }
+        else {
+            System.out.println("Number is the Odd number");
         }
     }
 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-
-        Oddeven(num);
+        OddEvenNum(3);
+        OddEvenNum(4);
+        OddEvenNum(6);
+        OddEvenNum(7);
     }
 }
