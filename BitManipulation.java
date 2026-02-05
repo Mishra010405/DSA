@@ -87,10 +87,28 @@
 // Program to get ith Bit...
 
 
+// public class JavaBasics {
+//     public static int getSetBit(int num , int i) {
+//         int bitmask = 1<<i;
+//         if((num & bitmask) == 0) {
+//             return 0;
+//         }
+//         else {
+//             return 1;
+//         }
+
+//     }
+//     public static void main(String args[]) {
+//         System.out.println(getSetBit(12,2));
+//     }
+// }
+
+// Set the ith bit... 
+
 public class JavaBasics {
-    public static int getSetBit(int num , int i) {
+    public static int SetIthbit(int num, int i){
         int bitmask = 1<<i;
-        if((num & bitmask) == 0) {
+        if((num | bitmask) == 0) {
             return 0;
         }
         else {
@@ -98,7 +116,10 @@ public class JavaBasics {
         }
 
     }
-    public static void main(String args[]) {
-        System.out.println(getSetBit(12,2));
+
+    public static void main(String args []) {
+        System.out.println(SetIthbit(13,2));
+
     }
+
 }
