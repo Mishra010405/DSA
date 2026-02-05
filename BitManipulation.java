@@ -105,21 +105,25 @@
 
 // Set the ith bit... 
 
-public class JavaBasics {
-    public static int SetIthbit(int num, int i){
-        int bitmask = 1<<i;
-        if((num | bitmask) == 0) {
-            return 0;
-        }
-        else {
-            return 1;
-        }
+// public class JavaBasics {
+//     public static int SetIthbit(int num, int i){
+//         int bitmask = 1<<i;
+//         if((num | bitmask) == 0) {
+//             return 0;
+//         }
+//         else {
+//             return 1;
+//         }
 
-    }
+//     }
 
-    public static void main(String args []) {
-        System.out.println(SetIthbit(13,2));
+//     public static void main(String args []) {
+//         System.out.println(SetIthbit(13,2));
 
-    }
+//     }
 
-}
+// }
+
+
+// Clear ith bit ...
+
