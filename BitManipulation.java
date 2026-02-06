@@ -209,28 +209,24 @@
 //         return ans;
 //     }
 
-//     public static void main(Strina args []) {
+//     public static void main(String args []) {
 //         System.out.println(FastExponential(3,5))
 
 //     }
 // }
 
 public class JavaBasics {
-    public static void EvenOdd(int num) {
-        int bitmask = 1;
+    public static int getIthbit(int num , int i) {
+        int bitmask =1<<i;
         if((num & bitmask) == 0) {
-            System.out.println("Even Number");
+            return 0;
         }
         else {
-            System.out.println("Odd Number");
-
+            return 1;
         }
 
     }
-    public static void main(String args []) {
-        EvenOdd(3);
-        EvenOdd(7);
-        EvenOdd(8);
-
+    public static void main(String args[]) {
+        System.out.println(getIthbit(13,2));
     }
 }
