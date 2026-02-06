@@ -218,32 +218,40 @@
 
 // Update the ith bit... 
 
+// public class JavaBasics {
+//     public static int SetIthbit(int num , int i) {
+//         int bitmask = 1<<i ; 
+//         return num | bitmask;
+//     }
+
+//     public static int ClearIthBit(int num , int i) {
+//         int bitmask =1 ; 
+//         return num & bitmask;
+//     }
+
+//     public static int UpdateIthBit(int num , int i , int newBit ){
+//         if(newBit ==0) {
+//             return SetIthbit(num , i);
+//         }
+
+//         else {
+//             return ClearIthBit(num , i);
+//         }
+//     }
+
+//     public static void main(String args[]) {
+//         int num = 13;
+//         System.out.println("Set Bit " + SetIthbit(num,  1));
+//         System.out.println("Clear Bit " + ClearIthBit(num, 2));
+//         System.out.println("Updated Bit " + UpdateIthBit(num, 2 , 0));
+
+//     }
+// }
+
+
+
+// Clear Last ith Bit ...
+
 public class JavaBasics {
-    public static int SetIthbit(int num , int i) {
-        int bitmask = 1<<i ; 
-        return num | bitmask;
-    }
-
-    public static int ClearIthBit(int num , int i) {
-        int bitmask =1 ; 
-        return num & bitmask;
-    }
-
-    public static int UpdateIthBit(int num , int i , int newBit ){
-        if(newBit ==0) {
-            return SetIthbit(num , i);
-        }
-
-        else {
-            return ClearIthBit(num , i);
-        }
-    }
-
-    public static void main(String args[]) {
-        int num = 13;
-        System.out.println("Set Bit " + SetIthbit(num,  1));
-        System.out.println("Clear Bit " + ClearIthBit(num, 2));
-        System.out.println("Updated Bit " + UpdateIthBit(num, 2 , 0));
-
-    }
+    
 }
