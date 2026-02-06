@@ -288,12 +288,12 @@
 
 //  Check if the Power of the number is 2 or not ....
 
-public class JavaBasics {
-    public static boolean isPowerofTwo(int num) {
-        return num*(num-1) ==0 ; 
-    }
+// public class JavaBasics {
+//     public static boolean isPowerofTwo(int num) {
+//         return num*(num-1) ==0 ; 
+//     }
 
-    public static void main(String args []) {
-        System.out.println(isPowerofTwo(15));
-    }
-}
+//     public static void main(String args []) {
+//         System.out.println(isPowerofTwo(15));
+//     }
+// }
