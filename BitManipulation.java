@@ -222,7 +222,7 @@ public class JavaBasics {
 
     }
     public static void main(String args[]) {
-        System.out.println(13,2);
+        System.out.println(ClearIthBit(13,2));
 
     }
 }
