@@ -216,20 +216,7 @@
 // }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Set the ith bit... 
+// Update the ith bit... 
 
 public class JavaBasics {
     public static int SetIthbit(int num , int i) {
