@@ -252,14 +252,14 @@
 
 // Clear Last ith Bit ...
 
-public class JavaBasics {
-    public static int ClearLastBit(int n , int i) {
-        int bitmask  = (~0)<<i;
-        return n & bitmask;
-    }
-    public static void main(String args []) {
-        System.out.println(ClearLastBit(15,2));
+// public class JavaBasics {
+//     public static int ClearLastBit(int n , int i) {
+//         int bitmask  = (~0)<<i;
+//         return n & bitmask;
+//     }
+//     public static void main(String args []) {
+//         System.out.println(ClearLastBit(15,2));
 
-    }
+//     }
     
-}
+// }
