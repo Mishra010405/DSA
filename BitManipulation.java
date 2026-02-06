@@ -218,12 +218,7 @@
 public class JavaBasics {
     public static int getIthbit(int num , int i) {
         int bitmask =1<<i;
-        if((num & bitmask) == 0) {
-            return 0;
-        }
-        else {
-            return 1;
-        }
+       
 
     }
     public static void main(String args[]) {
