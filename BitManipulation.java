@@ -243,7 +243,7 @@ public class JavaBasics {
         int num = 13;
         System.out.println("Set Bit " + SetIthbit(num,  1));
         System.out.println("Clear Bit " + ClearIthBit(num, 2));
-        System.out.println("Set Bit " + UpdateIthBit(num, 2 , 0));
+        System.out.println("Updated Bit " + UpdateIthBit(num, 2 , 0));
 
     }
 }
