@@ -267,20 +267,20 @@
 
 // Clear Range Of the Bits...
 
-public class JavaBasics {
+// public class JavaBasics {
 
-    public static int ClearRangeofBits(int n, int i, int j) {
+//     public static int ClearRangeofBits(int n, int i, int j) {
 
-        int a = (~0) << (j + 1);
-        int b = (1 << i) - 1;
+//         int a = (~0) << (j + 1);
+//         int b = (1 << i) - 1;
 
-        int bitmask = a | b;
+//         int bitmask = a | b;
 
-        return n & bitmask;
-    }
+//         return n & bitmask;
+//     }
 
-    public static void main(String args[]) {
+//     public static void main(String args[]) {
 
-        System.out.println(ClearRangeofBits(15, 1, 2));
-    }
-}
+//         System.out.println(ClearRangeofBits(15, 1, 2));
+//     }
+// }
