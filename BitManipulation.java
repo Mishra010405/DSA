@@ -215,14 +215,52 @@
 //     }
 // }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Set the ith bit... 
+
 public class JavaBasics {
-    public static int ClearIthBit(int num , int i) {
-        int bitmask = ~(1<<i);
-        return num & bitmask;
 
+    
+    public static int SetIthbit(int num, int i) {
+        int bitmask = 1 << i;
+        return num | bitmask;
     }
-    public static void main(String args[]) {
-        System.out.println(ClearIthBit(13,2));
 
+    
+    public static int ClearIthBit(int num, int i) {
+        int bitmask = ~(1 << i);
+        return num & bitmask;
+    }
+
+    
+    public static int UpdateIthBit(int num, int i, int newBit) {
+
+        if (newBit == 0) {
+            return ClearIthBit(num, i);
+        } else {
+            return SetIthbit(num, i);
+        }
+    }
+
+    public static void main(String args[]) {
+
+        int num = 13; 
+
+        System.out.println("Set bit: " + SetIthbit(num, 1));
+        System.out.println("Clear bit: " + ClearIthBit(num, 2));
+        System.out.println("Update bit: " + UpdateIthBit(num, 2, 0));
     }
 }
