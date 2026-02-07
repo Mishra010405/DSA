@@ -54,10 +54,12 @@ public class OOPS {
 
         bankAccount myAcc = new bankAccount();
 
-        // Assign value to variable
+        // Assign value
         myAcc.username = "Shivam Mishra";
+        myAcc.setPassword("Mishra@sada");
 
         System.out.println("The User name will be " + myAcc.username);
+        System.out.println("The User name's Password will be " + myAcc.getPassword());
     }
 }
 
@@ -65,4 +67,14 @@ class bankAccount {
 
     public String username;
     private String password;
+
+    // Setter
+    public void setPassword(String pwd) {
+        password = pwd;
+    }
+
+    // Getter
+    public String getPassword() {
+        return password;
+    }
 }
