@@ -375,17 +375,29 @@
 
 // Add 1 to an integer using Bit Manipulation........
 
+// public class JavaBasics {
+//     public static int addnum(int num , int i) {
+//         int bitmask = 1<<i;
+//         if((num & bitmask) !=0) {
+//             return num+1;
+//         }
+//         else {
+//             return 0;
+//         }
+//     }
+//     public static void main(String args[]) {
+//         System.out.println(addnum(15,1));
+//     }
+// }
+
+
+
+// Conver Upper to LowerCase....
+
 public class JavaBasics {
-    public static int addnum(int num , int i) {
-        int bitmask = 1<<i;
-        if((num & bitmask) !=0) {
-            return num+1;
-        }
-        else {
-            return 0;
-        }
-    }
     public static void main(String args[]) {
-        System.out.println(addnum(15,1));
+        for(char ch = 'A' ; ch<= 'Z' ; ch++) {
+            System.out.println((char) (ch | ' '));
+        }
     }
 }
