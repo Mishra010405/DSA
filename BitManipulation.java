@@ -394,10 +394,10 @@
 
 // Conver Upper to LowerCase....
 
-// public class JavaBasics {
-//     public static void main(String args[]) {
-//         for(char ch = 'A' ; ch<= 'Z' ; ch++) {
-//             System.out.println((char) (ch | ' '));
-//         }
-//     }
-// }
+public class JavaBasics {
+    public static void main(String args[]) {
+        for(char ch = 'A' ; ch<= 'Z' ; ch++) {
+            System.out.println((char) (ch | ' '));
+        }
+    }
+}
