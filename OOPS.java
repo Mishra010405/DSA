@@ -83,20 +83,22 @@
 
 // Constructors ... 
 
-public class JavaBasics {
-    public static void main(String args[]) {
+// public class JavaBasics {
+//     public static void main(String args[]) {
 
-        Student s1 = new Student();
+//         Student s1 = new Student();
 
-        s1.name = "Shivam";   
-        s1.roll = 23;        
+//         s1.name = "Shivam";   
+//         s1.roll = 23;        
 
-        System.out.println(s1.name);
-    }
-}
+//         System.out.println(s1.name);
+//     }
+// }
 
-class Student {
+// class Student {
 
-    String name;
-    int roll;
-}
+//     String name;
+//     int roll;
+// }
+
+
