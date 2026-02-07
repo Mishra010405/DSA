@@ -312,3 +312,41 @@ public class OOPS {
     }
 }
 
+
+
+class Animal {
+    String color ;
+
+    void eat(){
+        System.out.println("Animal eats..");
+    }
+
+    void breathes() {
+        System.out.println("Animal braeths");
+    }
+
+}
+
+// ----------FISH-----------------
+class fish extends Animal {
+    void swims() {
+        System.out.println("Fish can swims..");
+    }
+}
+
+class tuna extends fish {
+    void type() {
+        System.out.println("I am Tune fish");
+    }
+}
+
+class Shark extends fins {
+    void type() {
+        System.out.println("I am Shark Type");
+    }
+}
+
+
+
+
+
