@@ -297,3 +297,7 @@
 //         System.out.println(isPowerofTwo(15));
 //     }
 // }
+
+
+
+// Count the Set bit of the number..
