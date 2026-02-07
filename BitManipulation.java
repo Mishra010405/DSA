@@ -302,22 +302,23 @@
 
 // Count the Set bit of the number..
 
-public class JavaBasics {
-    public static int CountsetBits(int num) {
-        int count =0;
-        while(num>1) {
-            if((num & 1) != 0) {
-                count ++;
-            }
-            num = num>>1;
-        }
-        return count;
-    }
+// public class JavaBasics {
+//     public static int CountsetBits(int num) {
+//         int count =0;
+//         while(num>1) {
+//             if((num & 1) != 0) {
+//                 count ++;
+//             }
+//             num = num>>1;
+//         }
+//         return count;
+//     }
 
-    
+//     public static void main(String args[]) {
+//         System.out.println(CountsetBits(15));
+//     }
+// }
 
-    public static void main(String args[]) {
-        System.out.println(CountsetBits(15));
-    }
-}
+
+// Fast Exponential Code ...
 
