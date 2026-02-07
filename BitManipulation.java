@@ -342,14 +342,14 @@
 
 // What is the value of x^x for any valueof x ?;
 
-public class JavaBasics {
+// public class JavaBasics {
 
-    public static int valueOfXor(int x) {
-        return x ^ x;
-    }
+//     public static int valueOfXor(int x) {
+//         return x ^ x;
+//     }
 
-    public static void main(String args[]) {
-        System.out.println(valueOfXor(3));
-    }
-}
+//     public static void main(String args[]) {
+//         System.out.println(valueOfXor(3));
+//     }
+// }
 
