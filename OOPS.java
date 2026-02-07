@@ -49,32 +49,54 @@
 
 // Access Moidifiers.....
 
-public class OOPS {
-    public static void main(String ars[]) {
+// public class OOPS {
+//     public static void main(String ars[]) {
 
-        bankAccount myAcc = new bankAccount();
+//         bankAccount myAcc = new bankAccount();
 
-        // Assign value
-        myAcc.username = "Shivam Mishra";
-        myAcc.setPassword("Mishra@sada");
+//         // Assign value
+//         myAcc.username = "Shivam Mishra";
+//         myAcc.setPassword("Mishra@sada");
 
-        System.out.println("The User name will be " + myAcc.username);
-        System.out.println("The User name's Password will be " + myAcc.getPassword());
+//         System.out.println("The User name will be " + myAcc.username);
+//         System.out.println("The User name's Password will be " + myAcc.getPassword());
+//     }
+// }
+
+// class bankAccount {
+
+//     public String username;
+//     private String password;
+
+//     // Setter
+//     public void setPassword(String pwd) {
+//         password = pwd;
+//     }
+
+//     // Getter
+//     public String getPassword() {
+//         return password;
+//     }
+// }
+
+
+
+// Constructors ... 
+
+public class JavaBasics {
+    public static void main(String args[]) {
+
+        Student s1 = new Student();
+
+        s1.name = "Shivam";   
+        s1.roll = 23;        
+
+        System.out.println(s1.name);
     }
 }
 
-class bankAccount {
+class Student {
 
-    public String username;
-    private String password;
-
-    // Setter
-    public void setPassword(String pwd) {
-        password = pwd;
-    }
-
-    // Getter
-    public String getPassword() {
-        return password;
-    }
+    String name;
+    int roll;
 }
