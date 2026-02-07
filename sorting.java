@@ -354,29 +354,3 @@ class Student {
 
 
 
-// Parametrisecd COnstrucotorsss...
-
-// public class OOPS {
-//     public static void main(String args[]) {
-
-//         Student s1 = new Student("Shivam", 23);
-
-//         System.out.println(s1.name);
-//         System.out.println(s1.roll);
-//     }
-// }
-
-// class Student {
-
-//     String name;
-//     int roll;
-
-//     // Parameterized Constructor
-//     Student(String m, int r) {
-//         name = m;
-//         roll = r;
-//     }
-// }
-
-
-
