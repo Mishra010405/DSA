@@ -322,22 +322,22 @@
 
 // Fast Exponential Code ...
 
-public class JavaBasics {
-    public static int FastExponential(int a , int n) {
-        int ans =1;
+// public class JavaBasics {
+//     public static int FastExponential(int a , int n) {
+//         int ans =1;
 
-        while(n>0) {
-            if((n & 1) !=0) {
-                ans = ans*a;
-            }
-            a = a*a;
-            n = n>>1;
-        }
-        return ans;
-    }
+//         while(n>0) {
+//             if((n & 1) !=0) {
+//                 ans = ans*a;
+//             }
+//             a = a*a;
+//             n = n>>1;
+//         }
+//         return ans;
+//     }
+//     public static void main(String args []) {
+//         System.out.println(FastExponential(5,3));
+//     }
+//  }
 
-    public static void main(String args []) {
-        System.out.println(FastExponential(5,3));
-
-    }
- }
+// What is the value of x^x for any valueof x ?;
