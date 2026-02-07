@@ -347,6 +347,48 @@ class Shark extends fins {
 }
 
 
+// -----------BIRDS---------------
+
+class Birds extends Animal {
+    void fly() {
+        System.out.println("Birds can fly in the sky..")
+    }
+}
 
 
+class Peacock extends Bird {
+
+    void dance() {
+        System.out.println("Peacock dances");
+    }
+}
+
+// ---------------- MAMMAL ----------------
+class Mammal extends Animal {
+
+    void walk() {
+        System.out.println("Mammal walks");
+    }
+}
+
+class Dog extends Mammal {
+
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Mammal {
+
+    void meow() {
+        System.out.println("Cat meows");
+    }
+}
+
+class Human extends Mammal {
+
+    void speak() {
+        System.out.println("Human speaks");
+    }
+}
 
