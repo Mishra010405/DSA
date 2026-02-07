@@ -356,17 +356,21 @@
 
 // Swap two numbers without using any thirdvariable. ?;
 
-public class JavaBasics {
-    public static void main(String args[]) {
-        int a =5 ;
-        int b= 10;
+// public class JavaBasics {
+//     public static void main(String args[]) {
+//         int a =5 ;
+//         int b= 10;
 
-        System.out.println("Before the a = "+a+" Before Printing b =  "+b);
+//         System.out.println("Before the a = "+a+" Before Printing b =  "+b);
 
-        a = a^b;
-        b = a^b;
-        a = a^b;
+//         a = a^b;
+//         b = a^b;
+//         a = a^b;
 
-        System.out.println("After Swap = "+a+ ",b = "+ b);
-    }
-}
+//         System.out.println("After Swap = "+a+ ",b = "+ b);
+//     }
+// }
+
+
+
+// Add 1 to an integer using Bit Manipulation........
