@@ -237,3 +237,51 @@
 // }
 
 
+// Inheritance ...
+
+public class OOPS {
+    public static void main(String args []) {
+        fish shark = new fish();
+        shark.eat();
+        shark.breaths();
+
+        dogs dobby  = new dogs();
+        dobby.legs = 4;
+        System.out.println(dobby.legs);
+
+    }
+}
+
+// Base Clase 
+
+class Animal {
+    String color;
+
+    void  eat() {
+        System.out.println("Eats");
+    }
+
+    void breaths() {
+        System.out.println("Breaths");
+    }
+}
+
+// Delivered Class ...
+
+class fish extends Animal {
+    int fins;
+
+    void swims() {
+        System.out.println("Swims into the water");
+    }
+}
+
+// Multi level Inheritance...
+
+class Mammels extends Animal {
+    int legs;
+}
+
+class dogs extends Mammels {
+    String breed;
+}
