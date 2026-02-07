@@ -240,48 +240,64 @@
 // Inheritance ...
 
 public class OOPS {
-    public static void main(String args []) {
-        fish shark = new fish();
+    public static void main(String args[]) {
+
+        // Fish object
+        Fish shark = new Fish();
         shark.eat();
-        shark.breaths();
+        shark.breathes();
+        shark.swims();
 
-        dogs dobby  = new dogs();
+        // Dog object (Multilevel Inheritance)
+        Dog dobby = new Dog();
         dobby.legs = 4;
-        System.out.println(dobby.legs);
 
+        dobby.eat();
+        dobby.breathes();
+        dobby.walk();
+
+        System.out.println("Dog Legs: " + dobby.legs);
     }
 }
 
-// Base Clase 
-
+// Base Class
 class Animal {
+
     String color;
 
-    void  eat() {
+    void eat() {
         System.out.println("Eats");
     }
 
-    void breaths() {
-        System.out.println("Breaths");
+    void breathes() {
+        System.out.println("Breathes");
     }
 }
 
-// Delivered Class ...
+// Derived Class (Single Inheritance)
+class Fish extends Animal {
 
-class fish extends Animal {
     int fins;
 
     void swims() {
-        System.out.println("Swims into the water");
+        System.out.println("Swims in water");
     }
 }
 
-// Multi level Inheritance...
+// Multilevel Inheritance
+class Mammals extends Animal {
 
-class Mammels extends Animal {
     int legs;
+
+    void walk() {
+        System.out.println("Walks on land");
+    }
 }
 
-class dogs extends Mammels {
-    String breed;
+// Child of Mammals
+class Dog extends Mammals {
+
+    void bark() {
+        System.out.println("Barks");
+    }
 }
