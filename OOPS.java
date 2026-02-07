@@ -162,3 +162,74 @@
 
 // Copy COnstructor...
 
+public class OOPS {
+    public static void main(String args[]) {
+
+        Student s1 = new Student();
+
+        s1.name = "Shivam Mishra";
+        s1.roll = 34;
+        s1.password = "dsfgdfbd";
+
+        s1.marks[0] = 100;
+        s1.marks[1] = 98;
+        s1.marks[2] = 99;
+
+        System.out.println(s1.name);
+        System.out.println(s1.roll);
+        System.out.println(s1.password);
+
+        // Copy constructor (Deep Copy)
+        Student s2 = new Student(s1);
+
+        s2.password = "xvfgghh";
+
+        System.out.println(s2.password);
+
+        // Print marks of s2
+        for(int i = 0; i < 3; i++) {
+            System.out.println(s2.marks[i]);
+        }
+    }
+}
+
+class Student {
+
+    String name;
+    int roll;
+    String password;
+    int marks[];
+
+    // Default Constructor
+    Student() {
+        marks = new int[3]; // ✔ Create array
+    }
+
+    // Copy Constructor (Deep Copy)
+    Student(Student s1) {
+
+        this.name = s1.name;
+        this.roll = s1.roll;
+        this.password = s1.password;
+
+        // Create new array
+        this.marks = new int[3];
+
+        // Copy values one by one
+        for(int i = 0; i < 3; i++) {
+            this.marks[i] = s1.marks[i];
+        }
+    }
+
+    // Parameterized Constructor (Name)
+    Student(String name) {
+        this.name = name;
+        marks = new int[3];
+    }
+
+    // Parameterized Constructor (Roll)
+    Student(int roll) {
+        this.roll = roll;
+        marks = new int[3];
+    }
+}
