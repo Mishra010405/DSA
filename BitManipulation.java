@@ -301,3 +301,23 @@
 
 
 // Count the Set bit of the number..
+
+public class JavaBasics {
+    public static int countIntbit(int n) {
+        int count = 0;
+        while (n>1) {
+            if((n &1) != 0) {
+                count++;
+            }
+            n = n>>1;
+        }
+
+        return count;
+
+    }
+
+    public static void  main(String args [] ) {
+        System.out.println(countIntbit(15));
+
+    }
+}
