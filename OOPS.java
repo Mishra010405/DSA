@@ -239,65 +239,76 @@
 
 // Inheritance ...
 
+// public class OOPS {
+//     public static void main(String args[]) {
+
+//         // Fish object
+//         Fish shark = new Fish();
+//         shark.eat();
+//         shark.breathes();
+//         shark.swims();
+
+//         // Dog object (Multilevel Inheritance)
+//         Dog dobby = new Dog();
+//         dobby.legs = 4;
+
+//         dobby.eat();
+//         dobby.breathes();
+//         dobby.walk();
+
+//         System.out.println("Dog Legs: " + dobby.legs);
+//     }
+// }
+
+// // Base Class
+// class Animal {
+
+//     String color;
+
+//     void eat() {
+//         System.out.println("Eats");
+//     }
+
+//     void breathes() {
+//         System.out.println("Breathes");
+//     }
+// }
+
+// // Derived Class (Single Inheritance)
+// class Fish extends Animal {
+
+//     int fins;
+
+//     void swims() {
+//         System.out.println("Swims in water");
+//     }
+// }
+
+// // Multilevel Inheritance
+// class Mammals extends Animal {
+
+//     int legs;
+
+//     void walk() {
+//         System.out.println("Walks on land");
+//     }
+// }
+
+// // Child of Mammals
+// class Dog extends Mammals {
+
+//     void bark() {
+//         System.out.println("Barks");
+//     }
+// }
+
+
+
+// Hybrid inhertances..
+
 public class OOPS {
-    public static void main(String args[]) {
+    public static void main(String args []) {
 
-        // Fish object
-        Fish shark = new Fish();
-        shark.eat();
-        shark.breathes();
-        shark.swims();
-
-        // Dog object (Multilevel Inheritance)
-        Dog dobby = new Dog();
-        dobby.legs = 4;
-
-        dobby.eat();
-        dobby.breathes();
-        dobby.walk();
-
-        System.out.println("Dog Legs: " + dobby.legs);
     }
 }
 
-// Base Class
-class Animal {
-
-    String color;
-
-    void eat() {
-        System.out.println("Eats");
-    }
-
-    void breathes() {
-        System.out.println("Breathes");
-    }
-}
-
-// Derived Class (Single Inheritance)
-class Fish extends Animal {
-
-    int fins;
-
-    void swims() {
-        System.out.println("Swims in water");
-    }
-}
-
-// Multilevel Inheritance
-class Mammals extends Animal {
-
-    int legs;
-
-    void walk() {
-        System.out.println("Walks on land");
-    }
-}
-
-// Child of Mammals
-class Dog extends Mammals {
-
-    void bark() {
-        System.out.println("Barks");
-    }
-}
