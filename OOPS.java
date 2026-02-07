@@ -130,43 +130,35 @@
 
 // Non Parameterized COnstructors...
 
-public class OOPS {
-    public static void main(String args[]) {
-        Student s1 = new Student();
-        Student s2 = new Student("Shivam MISrha");
-        Student s3 = new Student(34);
+// public class OOPS {
+//     public static void main(String args[]) {
+//         Student s1 = new Student();
+//         Student s2 = new Student("Shivam MISrha");
+//         Student s3 = new Student(34);
 
-        System.out.println(s2.name);
-        System.out.println(s3.roll);
-
-
-    }
-}
-
-class Student {
-    String name;
-    int roll;
-
-    Student() {
-        System.out.println("Constructor is called....");
-    }   
-    Student(String name) {
-        this.name = name;
-    }
-
-    Student(int roll) {
-        this.roll= roll;
-    }
-}
+//         System.out.println(s2.name);
+//         System.out.println(s3.roll);
 
 
+//     }
+// }
+
+// class Student {
+//     String name;
+//     int roll;
+
+//     Student() {
+//         System.out.println("Constructor is called....");
+//     }   
+//     Student(String name) {
+//         this.name = name;
+//     }
+
+//     Student(int roll) {
+//         this.roll= roll;
+//     }
+// }
 
 
-
-
-
-
-
-
-
+// Copy COnstructor...
 
