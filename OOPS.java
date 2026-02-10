@@ -489,30 +489,37 @@
 // Abstract Classss
 
 public class OOPS {
-    public static void main(String args [ ]) {
+    public static void main(String args[]) {
+
         Horse h = new Horse();
         h.walk();
         h.eat();
 
+        Chicken c = new Chicken();
+        c.walk();
+        c.eat();
     }
 }
 
-Abstract class Animal {
+abstract class Animal {
+
     void eat() {
         System.out.println("Animal Eats");
     }
 
-    Abstract void walk();
+    abstract void walk();   // no body
 }
 
 class Horse extends Animal {
+
     void walk() {
-        System.out.println("Walks on the 4 legs...")
+        System.out.println("Walks on 4 legs...");
     }
 }
 
 class Chicken extends Animal {
+
     void walk() {
-        System.out.println("Walk on the 2 legs...")
+        System.out.println("Walks on 2 legs...");
     }
 }
