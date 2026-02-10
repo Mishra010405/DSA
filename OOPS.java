@@ -306,132 +306,132 @@
 
 // Hybrid inhertances..
 
-public class OOPS {
-    public static void main(String args []) {
-        tuna t1 = new tuna();
-        t1.eat();
-        t1.braeths();
-        t1.swims();
-        t1.type();
+// public class OOPS {
+//     public static void main(String args []) {
+//         tuna t1 = new tuna();
+//         t1.eat();
+//         t1.braeths();
+//         t1.swims();
+//         t1.type();
 
-        System.out.println();
+//         System.out.println();
 
-         Shark s1 = new Shark();
-        s1.eat();
-        s1.breathe();
-        s1.swim();
-        s1.type();
+//          Shark s1 = new Shark();
+//         s1.eat();
+//         s1.breathe();
+//         s1.swim();
+//         s1.type();
 
-        System.out.println();
+//         System.out.println();
 
-        // Bird
-        Peacock p1 = new Peacock();
-        p1.eat();
-        p1.breathe();
-        p1.fly();
-        p1.dance();
+//         // Bird
+//         Peacock p1 = new Peacock();
+//         p1.eat();
+//         p1.breathe();
+//         p1.fly();
+//         p1.dance();
 
-        System.out.println();
+//         System.out.println();
 
-        // Mammal
-        Dog d1 = new Dog();
-        d1.eat();
-        d1.breathe();
-        d1.walk();
-        d1.bark();
+//         // Mammal
+//         Dog d1 = new Dog();
+//         d1.eat();
+//         d1.breathe();
+//         d1.walk();
+//         d1.bark();
 
-        System.out.println();
+//         System.out.println();
 
-        Cat c1 = new Cat();
-        c1.eat();
-        c1.walk();
-        c1.meow();
+//         Cat c1 = new Cat();
+//         c1.eat();
+//         c1.walk();
+//         c1.meow();
 
-        System.out.println();
+//         System.out.println();
 
-        Human h1 = new Human();
-        h1.eat();
-        h1.walk();
-        h1.speak();
-    }
-}
-
-
-class Animal {
-    String color ;
-
-    void eat(){
-        System.out.println("Animal eats..");
-    }
-
-    void breathes() {
-        System.out.println("Animal braeths");
-    }
-
-}
-
-// ----------FISH-----------------
-class fish extends Animal {
-    void swims() {
-        System.out.println("Fish can swims..");
-    }
-}
-
-class tuna extends fish {
-    void type() {
-        System.out.println("I am Tune fish");
-    }
-}
-
-class Shark extends fins {
-    void type() {
-        System.out.println("I am Shark Type");
-    }
-}
+//         Human h1 = new Human();
+//         h1.eat();
+//         h1.walk();
+//         h1.speak();
+//     }
+// }
 
 
-// -----------BIRDS---------------
+// class Animal {
+//     String color ;
 
-class Birds extends Animal {
-    void fly() {
-        System.out.println("Birds can fly in the sky..")
-    }
-}
+//     void eat(){
+//         System.out.println("Animal eats..");
+//     }
+
+//     void breathes() {
+//         System.out.println("Animal braeths");
+//     }
+
+// }
+
+// // ----------FISH-----------------
+// class fish extends Animal {
+//     void swims() {
+//         System.out.println("Fish can swims..");
+//     }
+// }
+
+// class tuna extends fish {
+//     void type() {
+//         System.out.println("I am Tune fish");
+//     }
+// }
+
+// class Shark extends fins {
+//     void type() {
+//         System.out.println("I am Shark Type");
+//     }
+// }
 
 
-class Peacock extends Bird {
+// // -----------BIRDS---------------
 
-    void dance() {
-        System.out.println("Peacock dances");
-    }
-}
+// class Birds extends Animal {
+//     void fly() {
+//         System.out.println("Birds can fly in the sky..")
+//     }
+// }
 
-// ---------------- MAMMAL ---------------
-class Mammal extends Animal {
 
-    void walk() {
-        System.out.println("Mammal walks");
-    }
-}
+// class Peacock extends Bird {
 
-class Dog extends Mammal {
+//     void dance() {
+//         System.out.println("Peacock dances");
+//     }
+// }
 
-    void bark() {
-        System.out.println("Dog barks");
-    }
-}
+// // ---------------- MAMMAL ---------------
+// class Mammal extends Animal {
 
-class Cat extends Mammal {
+//     void walk() {
+//         System.out.println("Mammal walks");
+//     }
+// }
 
-    void meow() {
-        System.out.println("Cat meows");
-    }
-}
+// class Dog extends Mammal {
 
-class Human extends Mammal {
+//     void bark() {
+//         System.out.println("Dog barks");
+//     }
+// }
 
-    void speak() {
-        System.out.println("Human speaks");
-    }
-}
+// class Cat extends Mammal {
+
+//     void meow() {
+//         System.out.println("Cat meows");
+//     }
+// }
+
+// class Human extends Mammal {
+
+//     void speak() {
+//         System.out.println("Human speaks");
+//     }
+// }
 
