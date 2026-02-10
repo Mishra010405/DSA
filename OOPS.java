@@ -357,9 +357,6 @@ public class OOPS {
 }
 
 
-
-
-
 class Animal {
     String color ;
 
