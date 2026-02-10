@@ -406,7 +406,7 @@ class Peacock extends Bird {
     }
 }
 
-// ---------------- MAMMAL ----------------
+// ---------------- MAMMAL ---------------
 class Mammal extends Animal {
 
     void walk() {
