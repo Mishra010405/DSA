@@ -437,27 +437,27 @@
 
 // Calculator By Method Overloading......
 
-public class OOPS {
-    public static void main(String args[]) {
-        Calculator clc = new Calculator();
+// public class OOPS {
+//     public static void main(String args[]) {
+//         Calculator clc = new Calculator();
 
-        System.out.println(clc.sum(1, 2));          
-        System.out.println(clc.sum(1.4, 2.5));     
-        System.out.println(clc.sum(1, 2, 4));       
-    }
-}
+//         System.out.println(clc.sum(1, 2));          
+//         System.out.println(clc.sum(1.4, 2.5));     
+//         System.out.println(clc.sum(1, 2, 4));       
+//     }
+// }
 
-class Calculator {
+// class Calculator {
 
-    int sum(int a, int b) {
-        return a + b;
-    }
+//     int sum(int a, int b) {
+//         return a + b;
+//     }
 
-    double sum(double a, double b) {
-        return a + b;
-    }
+//     double sum(double a, double b) {
+//         return a + b;
+//     }
 
-    int sum(int a, int b, int c) {
-        return a + b + c;
-    }
-}
+//     int sum(int a, int b, int c) {
+//         return a + b + c;
+//     }
+// }
