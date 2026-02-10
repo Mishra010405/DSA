@@ -441,9 +441,9 @@ public class OOPS {
     public static void main(String args[]) {
         Calculator clc = new Calculator();
 
-        System.out.println(clc.sum(1, 2));          // int version
-        System.out.println(clc.sum(1.4, 2.5));      // double version
-        System.out.println(clc.sum(1, 2, 4));       // 3-int version
+        System.out.println(clc.sum(1, 2));          
+        System.out.println(clc.sum(1.4, 2.5));     
+        System.out.println(clc.sum(1, 2, 4));       
     }
 }
 
