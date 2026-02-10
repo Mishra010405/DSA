@@ -488,38 +488,40 @@
 
 // Abstract Classss
 
-public class OOPS {
-    public static void main(String args[]) {
+// public class OOPS {
+//     public static void main(String args[]) {
 
-        Horse h = new Horse();
-        h.walk();
-        h.eat();
+//         Horse h = new Horse();
+//         h.walk();
+//         h.eat();
 
-        Chicken c = new Chicken();
-        c.walk();
-        c.eat();
-    }
-}
+//         Chicken c = new Chicken();
+//         c.walk();
+//         c.eat();
+//     }
+// }
 
-abstract class Animal {
+// abstract class Animal {
 
-    void eat() {
-        System.out.println("Animal Eats");
-    }
+//     void eat() {
+//         System.out.println("Animal Eats");
+//     }
 
-    abstract void walk();   // no body
-}
+//     abstract void walk();   // no body
+// }
 
-class Horse extends Animal {
+// class Horse extends Animal {
 
-    void walk() {
-        System.out.println("Walks on 4 legs...");
-    }
-}
+//     void walk() {
+//         System.out.println("Walks on 4 legs...");
+//     }
+// }
 
-class Chicken extends Animal {
+// class Chicken extends Animal {
 
-    void walk() {
-        System.out.println("Walks on 2 legs...");
-    }
-}
+//     void walk() {
+//         System.out.println("Walks on 2 legs...");
+//     }
+// }
+
+
