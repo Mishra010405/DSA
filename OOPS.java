@@ -465,22 +465,22 @@
 
 // Another Example...
 
-public class OOPS {
-    public static void main(String args []) {
-        Deer d = new Deer();
-        d.eat();
+// public class OOPS {
+//     public static void main(String args []) {
+//         Deer d = new Deer();
+//         d.eat();
 
-    }
-}
+//     }
+// }
 
-class Animal {
-    void eat() {
-        System.out.println("It's Eats Grass...");
-    }
-}
+// class Animal {
+//     void eat() {
+//         System.out.println("It's Eats Grass...");
+//     }
+// }
 
-class Deer extends Animal {
-    void eat() {
-        System.out.println("Eats Grass ....");
-    }
-}
+// class Deer extends Animal {
+//     void eat() {
+//         System.out.println("Eats Grass ....");
+//     }
+// }
