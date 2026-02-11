@@ -530,7 +530,7 @@
 //     public static void main(String args[]) {
 
 //         Queen q = new Queen();
-        q.moves();
+        // q.moves();
 
 //         Rook r = new Rook();
 //         r.moves();
