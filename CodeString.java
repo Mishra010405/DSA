@@ -542,20 +542,20 @@
 
 // Find the largest Word in to the Strings...
 
-// public class JavaBasics {
-//     public static String largestString(String str ) {
-//         String word []= str.split(" ");
-//         String largest = word[0];
-//         for(int i=0 ; i<word.length ; i++) {
-//             if(word[i].length() > largest.length()) {
-//                 largest = word[i];
-//             }
-//         }
-//         return largest;
-//     }
+public class JavaBasics {
+    public static String largestString(String str ) {
+        String word []= str.split(" ");
+        String largest = word[0];
+        for(int i=0 ; i<word.length ; i++) {
+            if(word[i].length() > largest.length()) {
+                largest = word[i];
+            }
+        }
+        return largest;
+    }
 
-//     public static void main(String args[]) {
-//         String str = "Java is the very popular programing language";
-//         System.out.println(largestString(str));
-//     }
-// }
+    public static void main(String args[]) {
+        String str = "Java is the very popular programing language";
+        System.out.println(largestString(str));
+    }
+}
