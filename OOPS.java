@@ -463,7 +463,7 @@
 // }
 
 
-// Another Example...
+// Another Example.......
 
 // public class OOPS {
 //     public static void main(String args []) {
@@ -524,7 +524,7 @@
 //     }
 // }
 
-// Interfaces....
+// Interfaces...
 
 // public class OOPS {
 //     public static void main(String args[]) {
