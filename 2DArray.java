@@ -566,25 +566,25 @@
 
 // Print secondary diagonal elements.
 
-// import java.util.*;
+import java.util.*;
 
-// public class JavaBasics{
-//     public static void SecondaryDiagonal(int matrix[][]) {
-//         for(int i=0 ; i<matrix.length ; i++) {
-//             for(int j=0 ; j<matrix[0].length ; j++) {
-//                 if(i+1 == j) {
-//                     System.out.println("The Secondary Diagonals of the Matrix is - "+matrix[i][j]+" ");
-//                 }
-//             }
-//         }
+public class JavaBasics{
+    public static void SecondaryDiagonal(int matrix[][]) {
+        for(int i=0 ; i<matrix.length ; i++) {
+            for(int j=0 ; j<matrix[0].length ; j++) {
+                if(i+1 == j) {
+                    System.out.println("The Secondary Diagonals of the Matrix is - "+matrix[i][j]+" ");
+                }
+            }
+        }
 
-//     }
-//     public static void main(String args[]) {
-//         int matrix[][] = {
-//             {1, 2, 3 },
-//             {5, 1, 2 },
-//             {9, 5, 1}
-//         };
-//         SecondaryDiagonal(matrix);
-//     }
-// }
+    }
+    public static void main(String args[]) {
+        int matrix[][] = {
+            {1, 2, 3 },
+            {5, 1, 2 },
+            {9, 5, 1}
+        };
+        SecondaryDiagonal(matrix);
+    }
+}
