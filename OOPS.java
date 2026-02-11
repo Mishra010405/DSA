@@ -47,7 +47,7 @@
 // }
 
 
-// Access Moidifiers.....
+// Access Moidifiers...
 
 // public class OOPS {
 //     public static void main(String ars[]) {
