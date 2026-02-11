@@ -532,25 +532,25 @@
 //         Queen q = new Queen();
         q.moves();
 
-        Rook r = new Rook();
-        r.moves();
-    }
-}
+//         Rook r = new Rook();
+//         r.moves();
+//     }
+// }
 
-interface ChessPlayer {
-    void moves();   
-}
+// interface ChessPlayer {
+//     void moves();   
+// }
 
-class Queen implements ChessPlayer {
+// class Queen implements ChessPlayer {
 
-    public void moves() {
-        System.out.println("up, down, left, right, diagonal");
-    }
-}
+//     public void moves() {
+//         System.out.println("up, down, left, right, diagonal");
+//     }
+// }
 
-class Rook implements ChessPlayer {
+// class Rook implements ChessPlayer {
 
-    public void moves() {
-        System.out.println("up, down, left, right");
-    }
-}
+//     public void moves() {
+//         System.out.println("up, down, left, right");
+//     }
+// }
