@@ -568,12 +568,12 @@ Result: Pass
 
 If you want, I can give you next:
 
-👉 Random program on Inheritance
-👉 Random program on Polymorphism
-👉 Random program on File Handling
-👉 Random program on Exception Handling
+ Random program on Inheritance
+ Random program on Polymorphism
+ Random program on File Handling
+ Random program on Exception Handling
 
-Tell me which one you want 😊
+Tell me which one you 
 
 
 ere are all questions with complete solutions from your uploaded file “OOPS Questions (1).pdf”
@@ -603,9 +603,5 @@ const userTwo = new User("Chai aur Code", 11, true);
 console.log(userOne.constructor);
 
 
-fetch('https://api.github.com/users/hiteshchoudhary')
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.log(error));
 
 
