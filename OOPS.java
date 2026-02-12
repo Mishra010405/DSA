@@ -625,8 +625,8 @@
 // Choose the correct access modifier for overriding method in Circle class.
 
 
-// Shape.java
-protected void display()
+// // Shape.java
+// protected void display()
 
-// Circle.java
-< access - modifier > void display()
+// // Circle.java
+// < access - modifier > void display()
