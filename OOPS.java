@@ -555,5 +555,39 @@
 //     }
 // }
 
+abstract class Car {
 
-// /
+    // Static block
+    static {
+        System.out.print("1");
+    }
+
+    // Constructor
+    public Car(String name) {
+        super();
+        System.out.print("2");
+    }
+
+    // Instance block
+    {
+        System.out.print("3");
+    }
+}
+
+public class BlueCar extends Car {
+
+    // Instance block
+    {
+        System.out.print("4");
+    }
+
+    // Constructor
+    public BlueCar() {
+        super("blue");
+        System.out.print("5");
+    }
+
+    public static void main(String[] args) {
+        new BlueCar();
+    }
+}
