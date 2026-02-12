@@ -577,3 +577,7 @@ Tell me which one you want 😊
 
 
 ere are all questions with complete solutions from your uploaded file “OOPS Questions (1).pdf”
+
+User.prototype.greeting = function () {
+    console.log(`Welcome ${this.username}`);
+};
