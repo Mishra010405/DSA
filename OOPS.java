@@ -603,5 +603,10 @@ const userTwo = new User("Chai aur Code", 11, true);
 console.log(userOne.constructor);
 
 
+{ username: 'Hitesh', password: '123' }
+Hitesh
+The promise is either resolved or rejected
+
+
 
 
