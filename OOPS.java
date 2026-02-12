@@ -566,3 +566,11 @@ Name  : Rahul
 Marks : 78
 Result: Pass
 
+If you want, I can give you next:
+
+👉 Random program on Inheritance
+👉 Random program on Polymorphism
+👉 Random program on File Handling
+👉 Random program on Exception Handling
+
+Tell me which one you want 😊
