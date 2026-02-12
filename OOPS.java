@@ -581,3 +581,6 @@ ere are all questions with complete solutions from your uploaded file “OOPS Qu
 User.prototype.greeting = function () {
     console.log(`Welcome ${this.username}`);
 };
+
+
+const userOne = new User(...);
