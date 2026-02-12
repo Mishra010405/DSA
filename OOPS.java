@@ -568,23 +568,23 @@ class Complex {
     double real;
     double imag;
 
-    // Constructor
+    
     Complex(double r, double i) {
         real = r;
         imag = i;
     }
 
-    // Method for addition
+    
     Complex add(Complex c) {
         return new Complex(this.real + c.real, this.imag + c.imag);
     }
 
-    // Method for subtraction
+    
     Complex subtract(Complex c) {
         return new Complex(this.real - c.real, this.imag - c.imag);
     }
 
-    // Method for multiplication
+   
     Complex multiply(Complex c) {
         double realPart = this.real * c.real - this.imag * c.imag;
         double imagPart = this.real * c.imag + this.imag * c.real;
