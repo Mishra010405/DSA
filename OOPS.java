@@ -607,6 +607,9 @@ console.log(userOne.constructor);
 Hitesh
 The promise is either resolved or rejected
 
+let error true   ❌
+
+
 
 
 
