@@ -556,77 +556,8 @@
 // }
 
 
-// Practica questions......
+// What is the output of the following program?
 
-// Print the sum, difference and product of two complex numbers by creating a class named Complex
-//  with separate methods for each operation whose real and imaginary parts are entered by the user.
+// ✔ Correct Answer:
 
-
-// import java.util.Scanner;
-
-// class Complex {
-//     double real;
-//     double imag;
-
-    
-//     Complex(double r, double i) {
-//         real = r;
-//         imag = i;
-//     }
-
-    
-//     Complex add(Complex c) {
-//         return new Complex(this.real + c.real, this.imag + c.imag);
-//     }
-
-    
-//     Complex subtract(Complex c) {
-//         return new Complex(this.real - c.real, this.imag - c.imag);
-//     }
-
-   
-//     Complex multiply(Complex c) {
-//         double realPart = this.real * c.real - this.imag * c.imag;
-//         double imagPart = this.real * c.imag + this.imag * c.real;
-//         return new Complex(realPart, imagPart);
-//     }
-
-//     void display() {
-//         System.out.println(real + " + " + imag + "i");
-//     }
-// }
-
-// public class Main {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-
-//         System.out.print("Enter real and imaginary part of first complex number: ");
-//         Complex c1 = new Complex(sc.nextDouble(), sc.nextDouble());
-
-//         System.out.print("Enter real and imaginary part of second complex number: ");
-//         Complex c2 = new Complex(sc.nextDouble(), sc.nextDouble());
-
-//         Complex sum = c1.add(c2);
-//         Complex diff = c1.subtract(c2);
-//         Complex prod = c1.multiply(c2);
-
-//         System.out.print("Sum: ");
-//         sum.display();
-
-//         System.out.print("Difference: ");
-//         diff.display();
-
-//         System.out.print("Product: ");
-//         prod.display();
-//     }
-// }
-
-
-// Choose the correct access modifier for overriding method in Circle class.
-
-
-// // Shape.java
-// protected void display()
-
-// // Circle.java
-// < access - modifier > void display()
+// C. 13245
