@@ -556,5 +556,5 @@
 // }
 
 
-User.prototype.greeting =
+User.
     
