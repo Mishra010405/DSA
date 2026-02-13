@@ -556,6 +556,6 @@
 // }
 
 
-console.log(userOne.constructor);
+console.log();
 
     
