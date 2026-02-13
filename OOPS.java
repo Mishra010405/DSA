@@ -557,8 +557,7 @@
 
 
 
-fetch('https://api.github.com/users/hi
-.then(response => response.)
+fetch('https://api.github.
 
 
 
