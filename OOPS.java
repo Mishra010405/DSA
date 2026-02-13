@@ -556,5 +556,6 @@
 // }
 
 
-User.
+const userOne = new User(...);
+
     
