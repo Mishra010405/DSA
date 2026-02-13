@@ -556,5 +556,5 @@
 // }
 
 
-User.prototype.greeting = function () {
+User.prototype.greeting =
     
