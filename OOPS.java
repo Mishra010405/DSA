@@ -556,60 +556,6 @@
 // }
 
 
-Enter Student ID: 101
-Enter Student Name: Rahul
-Enter Marks: 78
-
---- Student Details ---
-ID    : 101
-Name  : Rahul
-Marks : 78
-Result: Pass
-
-If you want, I can give you next:
-
- Random program on Inheritance
- Random program on Polymorphism
- Random program on File Handling
- Random program on Exception Handling
-
-Tell me which one you 
-
-
-ere are all questions with complete solutions from your uploaded file “OOPS Questions (1).pdf”
-
 User.prototype.greeting = function () {
     console.log(`Welcome ${this.username}`);
 };
-
-
-const userOne = new User(...);
-
-function User(username, logincount, isloggedIn) {
-    this.username = username;
-    this.logincount = logincount;
-    this.isloggedIn = isloggedIn;
-
-    this.greeting = function () {
-        console.log(`Welcome ${this.username}`);
-    };
-}
-
-// No need to return this when using new
-
-const userOne = new User("Hitesh", 12, true);
-const userTwo = new User("Chai aur Code", 11, true);
-
-console.log(userOne.constructor);
-
-
-{ username: 'Hitesh', password: '123' }
-Hitesh
-The promise is either resolved or rejected
-
-let error true   ❌
-
-
-
-
-
