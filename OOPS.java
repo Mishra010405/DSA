@@ -556,16 +556,9 @@
 // }
 
 
-function User(username, loginco
-    this.username = username;
-    this.logincount = 
+function U
 
-    this.greeting = function () {
-        console.log(`Welcome $
-    };
-}
-
-rn this when using new
+rn thing new
 
 
 
