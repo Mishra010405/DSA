@@ -557,5 +557,4 @@
 
 
 User.prototype.greeting = function () {
-    console.log(`Welcome ${this.username}`);
-};
+    
