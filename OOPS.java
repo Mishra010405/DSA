@@ -556,6 +556,22 @@
 // }
 
 
-console.log();
+function User(username, logincount, isloggedIn) {
+    this.username = username;
+    this.logincount = logincount;
+    this.isloggedIn = isloggedIn;
+
+    this.greeting = function () {
+        console.log(`Welcome ${this.username}`);
+    };
+}
+
+// No need to return this when using new
+
+const userOne = new User("Hitesh", 12, true);
+const userTwo = new User("Chai aur Code", 11, true);
+
+console.log(userOne.constructor);
+
 
     
