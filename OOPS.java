@@ -557,10 +557,9 @@
 
 
 
-fetch('https://api.github.com/users/hiteshchoudhary')
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.log(error));
+fetch('https://api.github.com/users/hi
+.then(response => response.)
+
 
 
 
