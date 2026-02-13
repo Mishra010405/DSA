@@ -556,22 +556,18 @@
 // }
 
 
-function User(username, logincount, isloggedIn) {
+function User(username, loginco
     this.username = username;
-    this.logincount = logincount;
-    this.isloggedIn = isloggedIn;
+    this.logincount = 
 
     this.greeting = function () {
-        console.log(`Welcome ${this.username}`);
+        console.log(`Welcome $
     };
 }
 
-// No need to return this when using new
+rn this when using new
 
-const userOne = new User("Hitesh", 12, true);
-const userTwo = new User("Chai aur Code", 11, true);
 
-console.log(userOne.constructor);
 
 
     
