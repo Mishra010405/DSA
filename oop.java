@@ -61,16 +61,21 @@
 // Constructor.....
 
 public class OOPS {
-    Student s1 = new Student();
-    System.out.println(s1.name);
-    
+
+    public static void main(String args[]) {
+
+        Student s1 = new Student("Shivam");
+        System.out.println(s1.name);
+
+    }
 }
 
 class Student {
+
     String name;
     int roll;
 
     Student(String name) {
-        this.name = name ;
+        this.name = name;
     }
 }
