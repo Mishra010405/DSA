@@ -64,18 +64,22 @@ public class OOPS {
 
     public static void main(String args[]) {
 
-        Student s1 = new Student("Shivam");
+        Student s1 = new Student("Shivam", 101, "abcd");
+
         System.out.println(s1.name);
+        System.out.println(s1.roll);
+        System.out.println(s1.password);
 
-        s1.name = "Shradha";
-        s1.roll = 345;
-        s1.password = "abcd";
+        // Copy Constructor
+        Student s2 = new Student(s1);
 
-        Student s2 = new Student();
-        s2.password = "xyz";
-
+        System.out.println("\nCopied Student:");
+        System.out.println(s2.name);
+        System.out.println(s2.roll);
+        System.out.println(s2.password);
     }
 }
+
 
 class Student {
 
@@ -84,20 +88,29 @@ class Student {
     String password;
     int marks[];
 
-    // Copy COnstructor...
-    Student(String name) {
-        this.name = s1.name;
-        this.roll = s1.roll;
-    }   
-
+    // Default Constructor
     Student() {
         marks = new int[3];
-        System.out.println("Constructor is called...")
+        System.out.println("Constructor is called...");
     }
-    Student(String name) {
+
+    // Parameterized Constructor
+    Student(String name, int roll, String password) {
         this.name = name;
-    }
-    Student(int roll) {
         this.roll = roll;
+        this.password = password;
+        this.marks = new int[3];
     }
- }
+
+    // Copy Constructor
+    Student(Student s) {
+        this.name = s.name;
+        this.roll = s.roll;
+        this.password = s.password;
+
+        this.marks = new int[3];
+        for (int i = 0; i < marks.length; i++) {
+            this.marks[i] = s.marks[i];
+        }
+    }
+}
