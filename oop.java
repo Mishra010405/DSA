@@ -120,9 +120,12 @@
 
 public class OOPS {
     public static void main(String args[]) {
-        Dog dobby = new Dog();
-        dobby.eat();
-        dobby.legs = 4;
+        // Dog dobby = new Dog();
+        // dobby.eat();
+        // dobby.legs = 4;
+        // System.out.println(dobby.legs);
+
+
 
     }
 }
@@ -141,10 +144,29 @@ class Animal {
     }
 }
 
+// class Mammels extends Animal {
+//     int legs;
+// }   
+
+// class Dog extends Mammels {
+//     String breads;
+// }
+
 class Mammels extends Animal {
-    int legs;
+    void walk() {
+        System.out.println("Walks and wals on the land");
+    }
 }
 
-class Dog extends Mammels {
-    String breads;
+class Fish extends Animal {
+    void swim() {
+        System.out.println("Fish Swims in the water Swim");
+    }
 }
+
+class Bird extends Animal {
+    void fly() {
+        System.out.println("The Birds Fly in the sky ")
+    }
+}
+
