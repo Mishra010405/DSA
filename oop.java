@@ -60,57 +60,57 @@
 
 // Constructor.....
 
-public class OOPS {
+// public class OOPS {
 
-    public static void main(String args[]) {
+//     public static void main(String args[]) {
 
-        Student s1 = new Student("Shivam", 101, "abcd");
+//         Student s1 = new Student("Shivam", 101, "abcd");
 
-        System.out.println(s1.name);
-        System.out.println(s1.roll);
-        System.out.println(s1.password);
+//         System.out.println(s1.name);
+//         System.out.println(s1.roll);
+//         System.out.println(s1.password);
 
-        // Copy Constructor
-        Student s2 = new Student(s1);
+//         // Copy Constructor
+//         Student s2 = new Student(s1);
 
-        System.out.println("\nCopied Student:");
-        System.out.println(s2.name);
-        System.out.println(s2.roll);
-        System.out.println(s2.password);
-    }
-}
+//         System.out.println("\nCopied Student:");
+//         System.out.println(s2.name);
+//         System.out.println(s2.roll);
+//         System.out.println(s2.password);
+//     }
+// }
 
 
-class Student {
+// class Student {
 
-    String name;
-    int roll;
-    String password;
-    int marks[];
+//     String name;
+//     int roll;
+//     String password;
+//     int marks[];
 
-    // Default Constructor
-    Student() {
-        marks = new int[3];
-        System.out.println("Constructor is called...");
-    }
+//     // Default Constructor
+//     Student() {
+//         marks = new int[3];
+//         System.out.println("Constructor is called...");
+//     }
 
-    // Parameterized Constructor
-    Student(String name, int roll, String password) {
-        this.name = name;
-        this.roll = roll;
-        this.password = password;
-        this.marks = new int[3];
-    }
+//     // Parameterized Constructor
+//     Student(String name, int roll, String password) {
+//         this.name = name;
+//         this.roll = roll;
+//         this.password = password;
+//         this.marks = new int[3];
+//     }
 
-    // Copy Constructor
-    Student(Student s) {
-        this.name = s.name;
-        this.roll = s.roll;
-        this.password = s.password;
+//     // Copy Constructor
+//     Student(Student s) {
+//         this.name = s.name;
+//         this.roll = s.roll;
+//         this.password = s.password;
 
-        this.marks = new int[3];
-        for (int i = 0; i < marks.length; i++) {
-            this.marks[i] = s.marks[i];
-        }
-    }
-}
+//         this.marks = new int[3];
+//         for (int i = 0; i < marks.length; i++) {
+//             this.marks[i] = s.marks[i];
+//         }
+//     }
+// }
