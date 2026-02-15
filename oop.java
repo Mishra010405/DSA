@@ -170,3 +170,39 @@ class Bird extends Animal {
     }
 }
 
+// Level 2 
+class Tuna extends Fish {
+    void type() {
+        System.out.println("I am Tuna fish");
+    }
+}
+
+class Shark extends Fish {
+    void type() {
+        System.out.println("I am Shark fish");
+    }
+}
+
+class Peacock extends Bird {
+    void type() {
+        System.out.println("I am Peacock");
+    }
+}
+
+class Dog extends Mammal {
+    void type() {
+        System.out.println("I am Dog");
+    }
+}
+
+class Cat extends Mammal {
+    void type() {
+        System.out.println("I am Cat");
+    }
+}
+
+class Human extends Mammal {
+    void type() {
+        System.out.println("I am Human");
+    }
+}
