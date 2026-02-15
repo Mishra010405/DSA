@@ -67,6 +67,13 @@ public class OOPS {
         Student s1 = new Student("Shivam");
         System.out.println(s1.name);
 
+        s1.name = "Shradha";
+        s1.roll = 345;
+        s1.password = "abcd";
+
+        Student s2 = new Student();
+        s2.password = "xyz";
+
     }
 }
 
@@ -74,8 +81,23 @@ class Student {
 
     String name;
     int roll;
+    String password;
+    int marks[];
 
+    // Copy COnstructor...
+    Student(String name) {
+        this.name = s1.name;
+        this.roll = s1.roll;
+    }   
+
+    Student() {
+        marks = new int[3];
+        System.out.println("Constructor is called...")
+    }
     Student(String name) {
         this.name = name;
     }
-}
+    Student(int roll) {
+        this.roll = roll;
+    }
+ }
