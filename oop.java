@@ -114,3 +114,37 @@
 //         }
 //     }
 // }
+
+
+// Inheritancs ....
+
+public class OOPS {
+    public static void main(String args[]) {
+        Dog dobby = new Dog();
+        dobby.eat();
+        dobby.legs = 4;
+
+    }
+}
+
+// Base Classs
+
+class Animal {
+    String color;
+
+    void eat() {
+        System.out.println("Eats");
+    }
+
+    void breathe() {
+        System.out.println("Breaths");
+    }
+}
+
+class Mammels extends Animal {
+    int legs;
+}
+
+class Dog extends Mammels {
+    String breads;
+}
