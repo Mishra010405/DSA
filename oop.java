@@ -119,20 +119,35 @@
 // Inheritancs ....
 
 public class OOPS {
+
     public static void main(String args[]) {
-        // Dog dobby = new Dog();
-        // dobby.eat();
-        // dobby.legs = 4;
-        // System.out.println(dobby.legs);
 
+        Tuna t1 = new Tuna();
+        t1.eat();
+        t1.breathe();
+        t1.swim();
+        t1.type();
 
+        System.out.println();
 
+        Peacock p1 = new Peacock();
+        p1.eat();
+        p1.fly();
+        p1.type();
+
+        System.out.println();
+
+        Human h1 = new Human();
+        h1.eat();
+        h1.walk();
+        h1.type();
     }
 }
 
-// Base Classs
 
+// Base Class
 class Animal {
+
     String color;
 
     void eat() {
@@ -140,37 +155,35 @@ class Animal {
     }
 
     void breathe() {
-        System.out.println("Breaths");
+        System.out.println("Breathes");
     }
 }
 
-// class Mammels extends Animal {
-//     int legs;
-// }   
 
-// class Dog extends Mammels {
-//     String breads;
-// }
+// Level 1
+class Mammal extends Animal {
 
-class Mammels extends Animal {
     void walk() {
-        System.out.println("Walks and wals on the land");
+        System.out.println("Walks on land");
     }
 }
 
 class Fish extends Animal {
+
     void swim() {
-        System.out.println("Fish Swims in the water Swim");
+        System.out.println("Fish swims in water");
     }
 }
 
 class Bird extends Animal {
+
     void fly() {
-        System.out.println("The Birds Fly in the sky ")
+        System.out.println("Bird flies in the sky");
     }
 }
 
-// Level 2 
+
+// Level 2
 class Tuna extends Fish {
     void type() {
         System.out.println("I am Tuna fish");
