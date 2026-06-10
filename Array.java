@@ -18,6 +18,7 @@
 //     }
 // }
 
+
 // inpurt of the array..
 
 // import java.util.*;
@@ -365,35 +366,55 @@
 
 
 //  Checlk the number is the lucky number...
+// import java.util.*;
+
+// public class JavaBasics {
+//     public static void LuckyNumber(int num[]) {
+//         int count = 2;
+//         int size = num.length;
+//         while(count<= size) {
+//             int index = count-1;
+//             while(index<size) {
+//                 for(int i = index  ; i<size-1 ; i++) {
+//                     num[i] = num[i+1];
+//                 }
+//                 size--;
+
+//                 index += count-1;
+//             }
+//             count++;
+//         }
+
+//         // Print the Lucky number...
+//         for(int i=0 ; i<size ; i++) {
+//             System.out.println(num[i]+" ");
+//         }
+
+//     }
+//     public static void main(String args[]) {
+//         int num[] = {1,2,3,4,5,6,7,8,9,10,11,12,13};
+
+//         LuckyNumber(num);
+//     }
+// }
+
+
+
 import java.util.*;
 
-public class JavaBasics {
-    public static void LuckyNumber(int num[]) {
-        int count = 2;
-        int size = num.length;
-        while(count<= size) {
-            int index = count-1;
-            while(index<size) {
-                for(int i = index  ; i<size-1 ; i++) {
-                    num[i] = num[i+1];
-                }
-                size--;
+public class javaBasics {
+    public static void main(String args []) {
+        int arr[] = {1,2,3,4,5};
+        int first  = arr[0];
 
-                index += count-1;
-            }
-            count++;
+        for(int i=0 ; i<arr.length-1 ; i++) {
+            arr[i] = arr[i+1];
         }
+        arr[arr.length-1]  = first;
 
-        // Print the Lucky number...
-        for(int i=0 ; i<size ; i++) {
-            System.out.println(num[i]+" ");
+        for(int i=0  ; i<arr.length ; i++) {
+            System.out.print(arr[i]+" ");
         }
-
     }
-    public static void main(String args[]) {
-        int num[] = {1,2,3,4,5,6,7,8,9,10,11,12,13};
 
-        LuckyNumber(num);
-    }
 }
-
